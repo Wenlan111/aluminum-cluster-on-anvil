@@ -1,11 +1,12 @@
 # aluminum-cluster-on-anvil
-To run this python file, you need to follow the steps:  
-1. make sure your anvil has the n2v environment
+To run this python file, you need to follow the steps: 
 
-2. modify the name of the environment in your job.sh script
+make sure your anvil has the n2v environment using: conda env list
 
-3. run sbatch job.sh
+modify the name of the environment in your job.sh script 
 
-4. when the job is running, you can use squeue -u <yourusername> to check the progress of the job
+run sbatch job.sh 
 
-5. use less <filename> to check the output file
+when the job is running, you can use squeue -u to check the progress of the job 
+
+use less to check the output file modify the language
