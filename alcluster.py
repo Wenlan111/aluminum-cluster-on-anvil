@@ -73,7 +73,7 @@ mf = dft.RKS(cluster, xc='PBE')
 mf = mf.density_fit(auxbasis='weigend')   # enable RI-J first
 mf = mf.apply(remove_linear_dep_)
 mf.direct_scf = True
-mf.max)cycle = 100
+mf.max_cycle = 100
 mf.conv_tol = 1e-07  
 # Metallic stability
 mf = smearing_(mf, sigma=0.01, method='fermi')
