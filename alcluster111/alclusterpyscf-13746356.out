@@ -1,0 +1,177 @@
+=== Job info ===
+Job: alclusterpyscf  ID: 13746356  Node: a081.anvil.rcac.purdue.edu
+Threads: 8  PySCF max mem (MB): 255465
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  1
+Core(s) per socket:  64
+Socket(s):           2
+NUMA node(s):        8
+Model name:          AMD EPYC 7763 64-Core Processor
+NUMA node0 CPU(s):   0-15
+NUMA node1 CPU(s):   16-31
+NUMA node2 CPU(s):   32-47
+NUMA node3 CPU(s):   48-63
+NUMA node4 CPU(s):   64-79
+NUMA node5 CPU(s):   80-95
+NUMA node6 CPU(s):   96-111
+NUMA node7 CPU(s):   112-127
+              total        used        free      shared  buff/cache   available
+Mem:          251Gi        12Gi       233Gi       5.6Gi       5.9Gi       232Gi
+Swap:          89Gi       849Mi        88Gi
+TMPDIR=/tmp
+
+=== Starting Python with /usr/bin/time -v ===
+
+
+******** <class 'pyscf.scf.addons.SmearingDFRKS'> ********
+method = SmearingDFRKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpw93i5g48
+max_memory 255465 MB (current use 188 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+Initial guess from minao.
+init E= -12121.6427987237
+    sigma = 0.01  Optimized mu = -0.0137233849773  entropy = 18.2435679211
+    Total E(T) = -12114.5099131741  Free energy = -12114.6923488533  E0 = -12114.6011310137
+cycle= 1 E= -12114.5099131741  delta_E= 7.13  |g|= 0.86  |ddm|= 51.7
+    sigma = 0.01  Optimized mu = -0.0370657880305  entropy = 5.6773153258
+    Total E(T) = -12113.6101906761  Free energy = -12113.6669638293  E0 = -12113.6385772527
+cycle= 2 E= -12113.6101906761  delta_E=  0.9  |g|= 2.84  |ddm|= 17.9
+    sigma = 0.01  Optimized mu = -0.0770918942828  entropy = 2.94465516161
+    Total E(T) = -12114.2696630342  Free energy = -12114.2991095858  E0 = -12114.28438631
+cycle= 3 E= -12114.2696630342  delta_E= -0.659  |g|= 1.59  |ddm|= 8.54
+    sigma = 0.01  Optimized mu = -0.0632138928088  entropy = 2.78223228528
+    Total E(T) = -12114.5816342561  Free energy = -12114.609456579  E0 = -12114.5955454175
+cycle= 4 E= -12114.5816342561  delta_E= -0.312  |g|= 1.04  |ddm|=  3.8
+    sigma = 0.01  Optimized mu = -0.0587236901437  entropy = 2.78066092554
+    Total E(T) = -12114.7184302455  Free energy = -12114.7462368548  E0 = -12114.7323335501
+cycle= 5 E= -12114.7184302455  delta_E= -0.137  |g|= 0.673  |ddm|= 3.03
+    sigma = 0.01  Optimized mu = -0.0572999423002  entropy = 2.78049585923
+    Total E(T) = -12114.7810341117  Free energy = -12114.8088390703  E0 = -12114.794936591
+cycle= 6 E= -12114.7810341117  delta_E= -0.0626  |g|= 0.392  |ddm|= 1.79
+    sigma = 0.01  Optimized mu = -0.058571577118  entropy = 2.7747346091
+    Total E(T) = -12114.808481604  Free energy = -12114.8362289501  E0 = -12114.822355277
+cycle= 7 E= -12114.808481604  delta_E= -0.0274  |g|= 0.209  |ddm|=  1.6
+    sigma = 0.01  Optimized mu = -0.0577807669568  entropy = 2.65713099995
+    Total E(T) = -12114.8173255947  Free energy = -12114.8438969047  E0 = -12114.8306112497
+cycle= 8 E= -12114.8173255947  delta_E= -0.00884  |g|= 0.108  |ddm|= 1.24
+    sigma = 0.01  Optimized mu = -0.0569751040333  entropy = 1.16699845028
+    Total E(T) = -12114.8187301241  Free energy = -12114.8304001086  E0 = -12114.8245651164
+cycle= 9 E= -12114.8187301241  delta_E= -0.0014  |g|= 0.0838  |ddm|= 2.97
+    sigma = 0.01  Optimized mu = -0.0570478398144  entropy = 0.0173085905767
+    Total E(T) = -12114.8190221105  Free energy = -12114.8191951964  E0 = -12114.8191086535
+cycle= 10 E= -12114.8190221105  delta_E= -0.000292  |g|= 0.088  |ddm|= 0.934
+    sigma = 0.01  Optimized mu = -0.0570031845585  entropy = 0.00959541451138
+    Total E(T) = -12114.8193210214  Free energy = -12114.8194169756  E0 = -12114.8193689985
+cycle= 11 E= -12114.8193210214  delta_E= -0.000299  |g|= 0.0954  |ddm|= 0.266
+    sigma = 0.01  Optimized mu = -0.0569962508537  entropy = 0.0095621028625
+    Total E(T) = -12114.819386075  Free energy = -12114.819481696  E0 = -12114.8194338855
+cycle= 12 E= -12114.819386075  delta_E= -6.51e-05  |g|= 0.103  |ddm|= 0.199
+    sigma = 0.01  Optimized mu = -0.0569736424295  entropy = 0.00954783272847
+    Total E(T) = -12114.8192765388  Free energy = -12114.8193720171  E0 = -12114.8193242779
+cycle= 13 E= -12114.8192765388  delta_E= 0.00011  |g|= 0.114  |ddm|= 0.175
+    sigma = 0.01  Optimized mu = -0.0569264221553  entropy = 0.00954070096636
+    Total E(T) = -12114.819088719  Free energy = -12114.819184126  E0 = -12114.8191364225
+cycle= 14 E= -12114.819088719  delta_E= 0.000188  |g|= 0.125  |ddm|= 0.158
+    sigma = 0.01  Optimized mu = -0.056908285938  entropy = 0.00955410288339
+    Total E(T) = -12114.819412953  Free energy = -12114.819508494  E0 = -12114.8194607235
+cycle= 15 E= -12114.819412953  delta_E= -0.000324  |g|= 0.118  |ddm|= 0.264
+    sigma = 0.01  Optimized mu = -0.0567512252412  entropy = 0.00948872344972
+    Total E(T) = -12114.8197844647  Free energy = -12114.8198793519  E0 = -12114.8198319083
+cycle= 16 E= -12114.8197844647  delta_E= -0.000372  |g|= 0.115  |ddm|= 0.219
+    sigma = 0.01  Optimized mu = -0.0562333498079  entropy = 0.00949162012517
+    Total E(T) = -12114.8204524745  Free energy = -12114.8205473907  E0 = -12114.8204999326
+cycle= 17 E= -12114.8204524745  delta_E= -0.000668  |g|= 0.0941  |ddm|= 0.311
+    sigma = 0.01  Optimized mu = -0.0563185496026  entropy = 0.0095104656752
+    Total E(T) = -12114.8212806028  Free energy = -12114.8213757075  E0 = -12114.8213281551
+cycle= 18 E= -12114.8212806028  delta_E= -0.000828  |g|= 0.0677  |ddm|= 0.321
+    sigma = 0.01  Optimized mu = -0.0564327857636  entropy = 0.00951443115939
+    Total E(T) = -12114.821765143  Free energy = -12114.8218602873  E0 = -12114.8218127151
+cycle= 19 E= -12114.821765143  delta_E= -0.000485  |g|= 0.0517  |ddm|= 0.19
+    sigma = 0.01  Optimized mu = -0.0564880673814  entropy = 0.00953098159618
+    Total E(T) = -12114.8220871145  Free energy = -12114.8221824243  E0 = -12114.8221347694
+cycle= 20 E= -12114.8220871145  delta_E= -0.000322  |g|= 0.0369  |ddm|= 0.168
+    sigma = 0.01  Optimized mu = -0.0564455191799  entropy = 0.00955456383573
+    Total E(T) = -12114.8223424404  Free energy = -12114.822437986  E0 = -12114.8223902132
+cycle= 21 E= -12114.8223424404  delta_E= -0.000255  |g|= 0.0202  |ddm|= 0.157
+    sigma = 0.01  Optimized mu = -0.0563636967044  entropy = 0.0095474962514
+    Total E(T) = -12114.8224640419  Free energy = -12114.8225595169  E0 = -12114.8225117794
+cycle= 22 E= -12114.8224640419  delta_E= -0.000122  |g|= 0.011  |ddm|= 0.102
+    sigma = 0.01  Optimized mu = -0.0563840803694  entropy = 0.00953533030835
+    Total E(T) = -12114.8225306632  Free energy = -12114.8226260165  E0 = -12114.8225783399
+cycle= 23 E= -12114.8225306632  delta_E= -6.66e-05  |g|= 0.0102  |ddm|= 0.0824
+    sigma = 0.01  Optimized mu = -0.056405729055  entropy = 0.00952599571141
+    Total E(T) = -12114.8225837396  Free energy = -12114.8226789995  E0 = -12114.8226313696
+cycle= 24 E= -12114.8225837396  delta_E= -5.31e-05  |g|= 0.0081  |ddm|= 0.0704
+    sigma = 0.01  Optimized mu = -0.0565759914624  entropy = 0.00952943253094
+    Total E(T) = -12114.8226225284  Free energy = -12114.8227178227  E0 = -12114.8226701756
+cycle= 25 E= -12114.8226225284  delta_E= -3.88e-05  |g|= 0.00812  |ddm|= 0.0953
+    sigma = 0.01  Optimized mu = -0.0564126972676  entropy = 0.00951288834463
+    Total E(T) = -12114.8226653256  Free energy = -12114.8227604545  E0 = -12114.8227128901
+cycle= 26 E= -12114.8226653256  delta_E= -4.28e-05  |g|= 0.00368  |ddm|= 0.0684
+    sigma = 0.01  Optimized mu = -0.155029549846  entropy = 23.7202372483
+    Total E(T) = -12114.7042966038  Free energy = -12114.9414989763  E0 = -12114.8228977901
+Extra cycle  E= -12114.7042966038  delta_E= 0.118  |g|= 0.239  |ddm|= 9.03
+converged SCF energy = -12114.7042966038
+	Command being timed: "srun --cpu-bind=cores python -u alcluster.py"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 39:36.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8596
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1280
+	Voluntary context switches: 126
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+=== Python finished ===
+
+=== Last resource samples (sstat) ===
+Timestamp,JobID,AveCPU,MaxRSS,AveRSS,Tasks
+
+=== sacct summary ===
+JobID           Elapsed   TotalCPU     AveCPU      NCPUS     MaxRSS     AveRSS      State ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+13746356       00:39:41   00:00:00                    64                          RUNNING      0:0 
+13746356.ba+   00:39:41   00:00:00                    64                          RUNNING      0:0 
+13746356.ex+   00:39:41   00:00:00                    64                          RUNNING      0:0 
+13746356.0     00:39:27   00:00:00                     8                          RUNNING      0:0 
+
+13746356|00:39:41|00:00:00||64|||RUNNING|0:0
+13746356.batch|00:39:41|00:00:00||64|||RUNNING|0:0
+13746356.extern|00:39:41|00:00:00||64|||RUNNING|0:0
+13746356.0|00:39:27|00:00:00||8|||RUNNING|0:0
+
+All done.
