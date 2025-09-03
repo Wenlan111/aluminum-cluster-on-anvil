@@ -1,0 +1,50 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "alcluster.py", line 143, in <module>
+    e=mf.kernel()
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/soscf/newton_ah.py", line 746, in kernel
+    kernel(self, mo_coeff, mo_occ, dm0, conv_tol=self.conv_tol,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/soscf/newton_ah.py", line 501, in kernel
+    vhf = mf._scf.get_veff(mol, dm)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/dft/rks.py", line 103, in get_veff
+    vj = ks.get_j(mol, dm, hermi)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/scf/hf.py", line 1858, in get_j
+    return self.get_jk(mol, dm, hermi, with_k=False, omega=omega)[0]
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/scf/hf.py", line 2141, in get_jk
+    self._eri = mol.intor('int2e', aosym='s8')
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 3476, in intor
+    return moleintor.getints(intor, self._atm, bas, env,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/moleintor.py", line 240, in getints
+    return getints4c(intor_name, atm, bas, env, shls_slice, comp,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/moleintor.py", line 599, in getints4c
+    out = numpy.ndarray((nao_pair*(nao_pair+1)//2), buffer=out)
+numpy.core._exceptions.MemoryError: Unable to allocate 1.52 TiB for an array with shape (208539475836,) and data type float64
+srun: error: a510: task 0: Exited with exit code 1
+Command exited with non-zero status 1
+	Command being timed: "srun --cpu-bind=cores python -u alcluster.py"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:06.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8444
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1275
+	Voluntary context switches: 94
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

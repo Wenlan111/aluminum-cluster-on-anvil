@@ -1,0 +1,87 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+geometric-optimize called with the following command line:
+alcluster.py
+
+                                        [91m())))))))))))))))/[0m                     
+                                    [91m())))))))))))))))))))))))),[0m                
+                                [91m*)))))))))))))))))))))))))))))))))[0m             
+                        [94m#,[0m    [91m()))))))))/[0m                [91m.)))))))))),[0m          
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m.))))))))*[0m        
+                      [94m*%%%%%%,[0m  [91m))[0m              [93m..[0m              [91m,))))))).[0m      
+                        [94m*%%%%%%,[0m         [93m***************/.[0m        [91m.)))))))[0m     
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m/*********************.[0m       [91m)))))))[0m    
+              [94m.%%%%%%#[0m      [94m*%%%%%%,[0m  [93m*******/,[0m     [93m**********,[0m      [91m.))))))[0m   
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**[0m              [93m********[0m      [91m.))))))[0m  
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m,******[0m      [91m/)))))[0m  
+        [94m%%%%%%[0m      [94m.%%%%%%#[0m      [94m*%%%%%%,[0m    [92m,/////.[0m       [93m******[0m      [91m))))))[0m 
+      [94m#%[0m      [94m%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////,[0m      [93m*****/[0m     [91m,)))))[0m 
+    [94m#%%[0m  [94m%%%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+  [94m#%%%%.[0m      [94m%%%%%#[0m      [94m/%%%%%%*[0m      [94m#%%%%%%[0m   [92m/////)[0m     [93m******[0m      [91m))))),[0m
+    [94m#%%%%##%[0m  [94m%%%#[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m  [92m///////.[0m     [93m/*****[0m      [91m))))).[0m
+      [94m##[0m     [94m%%%[0m      [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [92m////////.[0m      [93m*****/[0m     [91m,)))))[0m 
+        [94m#%%%%#[0m      [94m/%%%%%%/[0m      [94m(%%%%%%[0m      [92m/)/)//[0m       [93m******[0m      [91m))))))[0m 
+          [94m##[0m      [94m.%%%%%%/[0m      [94m(%%%%%%,[0m                  [93m*******[0m      [91m))))))[0m  
+                [94m.%%%%%%/[0m      [94m*%%%%%%,[0m  [93m**.[0m             [93m/*******[0m      [91m.))))))[0m  
+              [94m*%%%%%%/[0m      [94m(%%%%%%[0m   [93m********/*..,*/*********[0m       [91m*))))))[0m   
+                [94m#%%/[0m      [94m(%%%%%%,[0m    [93m*********************/[0m        [91m)))))))[0m    
+                        [94m*%%%%%%,[0m         [93m,**************/[0m         [91m,))))))/[0m     
+                      [94m(%%%%%%[0m   [91m()[0m                              [91m))))))))[0m       
+                      [94m#%%%%,[0m  [91m())))))[0m                        [91m,)))))))),[0m        
+                        [94m#,[0m    [91m())))))))))[0m                [91m,)))))))))).[0m          
+                                 [91m()))))))))))))))))))))))))))))))/[0m             
+                                    [91m())))))))))))))))))))))))).[0m                
+                                         [91m())))))))))))))),[0m                     
+
+-=# [1;94m geomeTRIC started. Version: 1.1 [0m #=-
+Current date and time: 2025-09-03 00:26:57
+#========================================================#
+#| [92m    Arguments passed to driver run_optimizer():     [0m |#
+#========================================================#
+customengine              <pyscf.geomopt.geometric_solver.PySCFEngine object at 0x14dc0b93c970> 
+input                     /tmp/tmpmkjr1ym2/ec6ec823-1cef-46dc-886a-be7a8af3bbea 
+logIni                    /home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/geomopt/log.ini 
+----------------------------------------------------------
+Custom engine selected.
+Bonds will be generated from interatomic distances less than 1.20 times sum of covalent radii
+156 internal coordinates being used (instead of 156 Cartesians)
+<class 'geometric.internal.Distance'> : 174
+<class 'geometric.internal.Angle'> : 418
+<class 'geometric.internal.LinearAngle'> : 174
+<class 'geometric.internal.OutOfPlane'> : 1047
+<class 'geometric.internal.Dihedral'> : 10748
+<class 'geometric.internal.TranslationX'> : 1
+<class 'geometric.internal.TranslationY'> : 1
+<class 'geometric.internal.TranslationZ'> : 1
+<class 'geometric.internal.RotationA'> : 1
+<class 'geometric.internal.RotationB'> : 1
+<class 'geometric.internal.RotationC'> : 1
+> ===== Optimization Info: ====
+> Job type: Energy minimization
+> Maximum number of optimization cycles: 300
+> Initial / maximum trust radius (Angstrom): 0.100 / 0.300
+> Convergence Criteria:
+> Will converge when all 5 criteria are reached:
+>  |Delta-E| < 1.00e-06
+>  RMS-Grad  < 3.00e-04
+>  Max-Grad  < 4.50e-04
+>  RMS-Disp  < 1.20e-03
+>  Max-Disp  < 1.80e-03
+> === End Optimization Info ===
+Step    0 : Gradient = 1.561e-02/4.064e-02 (rms/max) Energy = -12253.1016633638
+Hessian Eigenvalues: 2.48720e-02 2.50110e-02 2.51331e-02 ... 7.27280e-02 7.62106e-02 7.96846e-02
+Step    1 : Displace = [0m1.007e-01[0m/[0m2.288e-01[0m (rms/max) Trust = 1.000e-01 (=) Grad = [0m1.385e-02[0m/[0m3.719e-02[0m (rms/max) E (change) = -12253.1879660853 ([0m-8.630e-02[0m) Quality = [0m1.356[0m
+Hessian Eigenvalues: 1.39720e-02 2.48795e-02 2.50115e-02 ... 7.27280e-02 7.61934e-02 7.96848e-02
+Step    2 : Displace = [0m1.433e-01[0m/[0m3.303e-01[0m (rms/max) Trust = 1.414e-01 ([92m+[0m) Grad = [0m1.123e-02[0m/[0m3.428e-02[0m (rms/max) E (change) = -12253.2725423282 ([0m-8.458e-02[0m) Quality = [0m0.949[0m
+Hessian Eigenvalues: 1.66418e-02 2.48873e-02 2.50118e-02 ... 7.27284e-02 7.61936e-02 7.96864e-02
+Step    3 : Displace = [0m1.669e-01[0m/[0m3.807e-01[0m (rms/max) Trust = 2.000e-01 ([92m+[0m) Grad = [0m9.065e-03[0m/[0m2.699e-02[0m (rms/max) E (change) = -12253.3028402640 ([0m-3.030e-02[0m) Quality = [0m0.818[0m
+Hessian Eigenvalues: 1.69776e-02 2.49092e-02 2.50128e-02 ... 7.27305e-02 7.62039e-02 7.96924e-02
+Step    4 : Displace = [0m3.348e-02[0m/[0m8.371e-02[0m (rms/max) Trust = 2.828e-01 ([92m+[0m) Grad = [0m7.736e-03[0m/[0m2.512e-02[0m (rms/max) E (change) = -12253.3110245109 ([0m-8.184e-03[0m) Quality = [0m1.502[0m
+Hessian Eigenvalues: 1.19031e-02 2.49231e-02 2.50134e-02 ... 7.27282e-02 7.61329e-02 7.96707e-02
+Step    5 : Displace = [0m3.853e-02[0m/[0m1.123e-01[0m (rms/max) Trust = 3.000e-01 ([92m+[0m) Grad = [0m5.910e-03[0m/[0m2.019e-02[0m (rms/max) E (change) = -12253.3229543488 ([0m-1.193e-02[0m) Quality = [0m1.500[0m
+Hessian Eigenvalues: 4.31930e-03 2.49204e-02 2.50132e-02 ... 7.27589e-02 7.61243e-02 7.96756e-02
+Step    6 : Displace = [0m6.085e-02[0m/[0m2.050e-01[0m (rms/max) Trust = 3.000e-01 (=) Grad = [0m6.109e-03[0m/[0m1.638e-02[0m (rms/max) E (change) = -12253.3350751208 ([0m-1.212e-02[0m) Quality = [0m1.434[0m
+Hessian Eigenvalues: 2.13937e-03 2.49229e-02 2.50133e-02 ... 7.29440e-02 7.61169e-02 7.96941e-02
