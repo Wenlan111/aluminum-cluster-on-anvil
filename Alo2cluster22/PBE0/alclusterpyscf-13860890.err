@@ -1,0 +1,7 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+slurmstepd: error: *** STEP 13860890.0 ON a146 CANCELLED AT 2025-09-10T11:16:24 ***
+slurmstepd: error: *** JOB 13860890 ON a146 CANCELLED AT 2025-09-10T11:16:24 ***

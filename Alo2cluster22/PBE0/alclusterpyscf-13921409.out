@@ -1,0 +1,931 @@
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp1ornwxfq
+max_memory 4000 MB (current use 126 MB)
+number electrons alpha = 152  beta = 150
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -5477.72398208271
+    sigma = 0.01  Optimized mu = -0.00395427355364  entropy = 8.88231110984
+    Total E(T) = -5473.35800512808  Free energy = -5473.44682823918  E0 = -5473.40241668363
+cycle= 1 E= -5473.35800512808  delta_E= 4.37  |g|= 3.14  |ddm|= 12.4
+    sigma = 0.01  Optimized mu = 0.0564151057484  entropy = 7.29994904355
+    Total E(T) = -5440.02423289225  Free energy = -5440.09723238268  E0 = -5440.06073263746
+cycle= 2 E= -5440.02423289225  delta_E= 33.3  |g|= 15.2  |ddm|= 8.86
+    sigma = 0.01  Optimized mu = -0.0666300683901  entropy = 1.39496100879
+    Total E(T) = -5456.32160005937  Free energy = -5456.33554966946  E0 = -5456.32857486442
+cycle= 3 E= -5456.32160005937  delta_E= -16.3  |g|= 11.6  |ddm|= 5.58
+    sigma = 0.01  Optimized mu = -0.104977876722  entropy = 3.20380993372
+    Total E(T) = -5465.3864994612  Free energy = -5465.41853756054  E0 = -5465.40251851087
+cycle= 4 E= -5465.3864994612  delta_E= -9.06  |g|= 6.57  |ddm|= 4.24
+    sigma = 0.01  Optimized mu = -0.0880757946014  entropy = 1.70029482768
+    Total E(T) = -5470.37728154383  Free energy = -5470.39428449211  E0 = -5470.38578301797
+cycle= 5 E= -5470.37728154383  delta_E= -4.99  |g|= 4.85  |ddm|= 2.36
+    sigma = 0.01  Optimized mu = -0.0553856457645  entropy = 0.0587838386676
+    Total E(T) = -5472.26141593167  Free energy = -5472.26200377006  E0 = -5472.26170985087
+cycle= 6 E= -5472.26141593167  delta_E= -1.88  |g|= 3.87  |ddm|= 1.53
+    sigma = 0.01  Optimized mu = -0.070800225305  entropy = 0.0339090882056
+    Total E(T) = -5473.31857570028  Free energy = -5473.31891479117  E0 = -5473.31874524573
+cycle= 7 E= -5473.31857570028  delta_E= -1.06  |g|= 3.11  |ddm|= 1.53
+    sigma = 0.01  Optimized mu = -0.064982279401  entropy = 0.0135024503713
+    Total E(T) = -5474.21903204572  Free energy = -5474.21916707023  E0 = -5474.21909955798
+cycle= 8 E= -5474.21903204572  delta_E= -0.9  |g|= 1.99  |ddm|= 1.11
+    sigma = 0.01  Optimized mu = -0.0597453900008  entropy = 0.0118095937823
+    Total E(T) = -5474.64272845298  Free energy = -5474.64284654891  E0 = -5474.64278750094
+cycle= 9 E= -5474.64272845298  delta_E= -0.424  |g|= 1.49  |ddm|= 2.29
+    sigma = 0.01  Optimized mu = -0.0589491231259  entropy = 0.00468739435431
+    Total E(T) = -5474.85143474276  Free energy = -5474.8514816167  E0 = -5474.85145817973
+cycle= 10 E= -5474.85143474276  delta_E= -0.209  |g|= 0.763  |ddm|= 1.15
+    sigma = 0.01  Optimized mu = -0.059599778449  entropy = 0.00342575744205
+    Total E(T) = -5474.92747957452  Free energy = -5474.92751383209  E0 = -5474.92749670331
+cycle= 11 E= -5474.92747957452  delta_E= -0.076  |g|= 0.445  |ddm|= 0.93
+    sigma = 0.01  Optimized mu = -0.0619958635248  entropy = 0.00298294882982
+    Total E(T) = -5474.96781127126  Free energy = -5474.96784110075  E0 = -5474.96782618601
+cycle= 12 E= -5474.96781127126  delta_E= -0.0403  |g|= 0.144  |ddm|= 0.633
+    sigma = 0.01  Optimized mu = -0.0597624765239  entropy = 0.00258586616481
+    Total E(T) = -5474.9787229986  Free energy = -5474.97874885726  E0 = -5474.97873592793
+cycle= 13 E= -5474.9787229986  delta_E= -0.0109  |g|= 0.0856  |ddm|= 0.443
+    sigma = 0.01  Optimized mu = -0.0601661687479  entropy = 0.00233545864203
+    Total E(T) = -5474.98221332168  Free energy = -5474.98223667626  E0 = -5474.98222499897
+cycle= 14 E= -5474.98221332168  delta_E= -0.00349  |g|= 0.122  |ddm|= 0.314
+    sigma = 0.01  Optimized mu = -0.0590863521669  entropy = 0.00216558493663
+    Total E(T) = -5474.98439939442  Free energy = -5474.98442105027  E0 = -5474.98441022235
+cycle= 15 E= -5474.98439939442  delta_E= -0.00219  |g|= 0.142  |ddm|= 0.262
+    sigma = 0.01  Optimized mu = -0.0591038536741  entropy = 0.00199725112502
+    Total E(T) = -5474.98778237314  Free energy = -5474.98780234565  E0 = -5474.98779235939
+cycle= 16 E= -5474.98778237314  delta_E= -0.00338  |g|= 0.113  |ddm|= 0.221
+    sigma = 0.01  Optimized mu = -0.0579346190061  entropy = 0.00190325257879
+    Total E(T) = -5474.99075943092  Free energy = -5474.99077846345  E0 = -5474.99076894718
+cycle= 17 E= -5474.99075943092  delta_E= -0.00298  |g|= 0.0795  |ddm|= 0.252
+    sigma = 0.01  Optimized mu = -0.0583754595813  entropy = 0.00175672671764
+    Total E(T) = -5474.99341859836  Free energy = -5474.99343616563  E0 = -5474.99342738199
+cycle= 18 E= -5474.99341859836  delta_E= -0.00266  |g|= 0.0224  |ddm|= 0.248
+    sigma = 0.01  Optimized mu = -0.0582302956857  entropy = 0.00170386279351
+    Total E(T) = -5474.99461055801  Free energy = -5474.99462759664  E0 = -5474.99461907733
+cycle= 19 E= -5474.99461055801  delta_E= -0.00119  |g|= 0.0434  |ddm|= 0.187
+    sigma = 0.01  Optimized mu = -0.0585225666947  entropy = 0.00168523694971
+    Total E(T) = -5474.99548024579  Free energy = -5474.99549709816  E0 = -5474.99548867197
+cycle= 20 E= -5474.99548024579  delta_E= -0.00087  |g|= 0.0499  |ddm|= 0.142
+    sigma = 0.01  Optimized mu = -0.0586847500773  entropy = 0.00166811311766
+    Total E(T) = -5474.99628945642  Free energy = -5474.99630613755  E0 = -5474.99629779698
+cycle= 21 E= -5474.99628945642  delta_E= -0.000809  |g|= 0.0502  |ddm|= 0.139
+    sigma = 0.01  Optimized mu = -0.0586843503937  entropy = 0.00165867683377
+    Total E(T) = -5474.99698462928  Free energy = -5474.99700121605  E0 = -5474.99699292267
+cycle= 22 E= -5474.99698462928  delta_E= -0.000695  |g|= 0.0458  |ddm|= 0.123
+    sigma = 0.01  Optimized mu = -0.0586943940754  entropy = 0.00164625908831
+    Total E(T) = -5474.9975563652  Free energy = -5474.99757282779  E0 = -5474.99756459649
+cycle= 23 E= -5474.9975563652  delta_E= -0.000572  |g|= 0.0412  |ddm|= 0.114
+    sigma = 0.01  Optimized mu = -0.0588129750891  entropy = 0.00165722965634
+    Total E(T) = -5474.99806286916  Free energy = -5474.99807944146  E0 = -5474.99807115531
+cycle= 24 E= -5474.99806286916  delta_E= -0.000507  |g|= 0.0274  |ddm|=  0.1
+    sigma = 0.01  Optimized mu = -0.0588222457779  entropy = 0.00163348629684
+    Total E(T) = -5474.99837029584  Free energy = -5474.9983866307  E0 = -5474.99837846327
+cycle= 25 E= -5474.99837029584  delta_E= -0.000307  |g|= 0.0271  |ddm|= 0.0915
+    sigma = 0.01  Optimized mu = -0.0588279880834  entropy = 0.00163861673649
+    Total E(T) = -5474.99861747187  Free energy = -5474.99863385804  E0 = -5474.99862566496
+cycle= 26 E= -5474.99861747187  delta_E= -0.000247  |g|= 0.0215  |ddm|= 0.0764
+    sigma = 0.01  Optimized mu = -0.0587963321796  entropy = 0.00163577275017
+    Total E(T) = -5474.99878529764  Free energy = -5474.99880165537  E0 = -5474.99879347651
+cycle= 27 E= -5474.99878529764  delta_E= -0.000168  |g|= 0.0189  |ddm|= 0.0655
+    sigma = 0.01  Optimized mu = -0.0588215695949  entropy = 0.00163624753898
+    Total E(T) = -5474.99891361575  Free energy = -5474.99892997823  E0 = -5474.99892179699
+cycle= 28 E= -5474.99891361575  delta_E= -0.000128  |g|= 0.0151  |ddm|= 0.0566
+    sigma = 0.01  Optimized mu = -0.0587379083891  entropy = 0.00163714734036
+    Total E(T) = -5474.99900132317  Free energy = -5474.99901769465  E0 = -5474.99900950891
+cycle= 29 E= -5474.99900132317  delta_E= -8.77e-05  |g|= 0.0119  |ddm|= 0.0445
+    sigma = 0.01  Optimized mu = -0.0588327826161  entropy = 0.00163539380403
+    Total E(T) = -5474.9990627729  Free energy = -5474.99907912683  E0 = -5474.99907094987
+cycle= 30 E= -5474.9990627729  delta_E= -6.14e-05  |g|= 0.00936  |ddm|= 0.0408
+    sigma = 0.01  Optimized mu = -0.0588378209196  entropy = 0.00163437626572
+    Total E(T) = -5474.9991068907  Free energy = -5474.99912323446  E0 = -5474.99911506258
+cycle= 31 E= -5474.9991068907  delta_E= -4.41e-05  |g|= 0.00731  |ddm|= 0.0354
+    sigma = 0.01  Optimized mu = -0.0588243216453  entropy = 0.00163511282962
+    Total E(T) = -5474.99913729291  Free energy = -5474.99915364404  E0 = -5474.99914546847
+cycle= 32 E= -5474.99913729291  delta_E= -3.04e-05  |g|= 0.00536  |ddm|= 0.0287
+    sigma = 0.01  Optimized mu = -0.159152491772  entropy = 6.70512866949
+    Total E(T) = -5474.95610018751  Free energy = -5475.0231514742  E0 = -5474.98962583086
+Extra cycle  E= -5474.95610018751  delta_E= 0.043  |g|= 0.207  |ddm|= 1.03
+converged SCF energy = -5474.95610018751  <S^2> = 1.7053026e-13  2S+1 = 1
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpptjdmz8j
+max_memory 4000 MB (current use 274 MB)
+number electrons alpha = 152  beta = 150
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -5477.54835660045
+    sigma = 0.01  Optimized mu = -0.00623513330903  entropy = 8.98868463087
+    Total E(T) = -5472.8721601846  Free energy = -5472.9620470309  E0 = -5472.91710360775
+cycle= 1 E= -5472.8721601846  delta_E= 4.68  |g|= 3.44  |ddm|= 12.2
+    sigma = 0.01  Optimized mu = 0.0483479893159  entropy = 6.86888946646
+    Total E(T) = -5433.32375380988  Free energy = -5433.39244270455  E0 = -5433.35809825721
+cycle= 2 E= -5433.32375380988  delta_E= 39.5  |g|= 15.6  |ddm|= 10.6
+    sigma = 0.01  Optimized mu = -0.147489257292  entropy = 7.5482025871
+    Total E(T) = -5474.40264984114  Free energy = -5474.47813186701  E0 = -5474.44039085408
+cycle= 3 E= -5474.40264984114  delta_E= -41.1  |g|= 1.73  |ddm|= 10.9
+    sigma = 0.01  Optimized mu = -0.112819006399  entropy = 2.67120724972
+    Total E(T) = -5473.75761951387  Free energy = -5473.78433158637  E0 = -5473.77097555012
+cycle= 4 E= -5473.75761951387  delta_E= 0.645  |g|= 2.98  |ddm|= 4.33
+    sigma = 0.01  Optimized mu = -0.0823823356643  entropy = 0.125938171064
+    Total E(T) = -5473.42675777702  Free energy = -5473.42801715873  E0 = -5473.42738746787
+cycle= 5 E= -5473.42675777702  delta_E= 0.331  |g|= 3.11  |ddm|= 2.04
+    sigma = 0.01  Optimized mu = -0.0636533898904  entropy = 0.00651052317991
+    Total E(T) = -5473.21479011558  Free energy = -5473.21485522081  E0 = -5473.21482266819
+cycle= 6 E= -5473.21479011558  delta_E= 0.212  |g|= 3.21  |ddm|= 0.905
+    sigma = 0.01  Optimized mu = -0.0611061034065  entropy = 0.00383797975231
+    Total E(T) = -5473.4063310498  Free energy = -5473.40636942959  E0 = -5473.4063502397
+cycle= 7 E= -5473.4063310498  delta_E= -0.192  |g|=    3  |ddm|= 0.999
+    sigma = 0.01  Optimized mu = -0.0674905924789  entropy = 0.00321917373822
+    Total E(T) = -5473.64533403224  Free energy = -5473.64536622398  E0 = -5473.64535012811
+cycle= 8 E= -5473.64533403224  delta_E= -0.239  |g|=  2.7  |ddm|= 0.829
+    sigma = 0.01  Optimized mu = -0.0623784532204  entropy = 0.00289920021036
+    Total E(T) = -5473.74744710129  Free energy = -5473.74747609329  E0 = -5473.74746159729
+cycle= 9 E= -5473.74744710129  delta_E= -0.102  |g|=  2.6  |ddm|= 0.621
+    sigma = 0.01  Optimized mu = -0.0627664864024  entropy = 0.00306377357899
+    Total E(T) = -5473.79418227317  Free energy = -5473.79421291091  E0 = -5473.79419759204
+cycle= 10 E= -5473.79418227317  delta_E= -0.0467  |g|= 2.59  |ddm|= 0.298
+    sigma = 0.01  Optimized mu = -0.0627016356355  entropy = 0.00303572371428
+    Total E(T) = -5473.81705715839  Free energy = -5473.81708751563  E0 = -5473.81707233701
+cycle= 11 E= -5473.81705715839  delta_E= -0.0229  |g|= 2.56  |ddm|= 0.174
+    sigma = 0.01  Optimized mu = -0.0625411275739  entropy = 0.00295756518412
+    Total E(T) = -5473.83573334664  Free energy = -5473.83576292229  E0 = -5473.83574813447
+cycle= 12 E= -5473.83573334664  delta_E= -0.0187  |g|= 2.51  |ddm|= 0.114
+    sigma = 0.01  Optimized mu = -0.0635609211348  entropy = 0.00308587291067
+    Total E(T) = -5473.82824983132  Free energy = -5473.82828069005  E0 = -5473.82826526069
+cycle= 13 E= -5473.82824983132  delta_E= 0.00748  |g|=  2.5  |ddm|= 0.32
+    sigma = 0.01  Optimized mu = -0.0623592430981  entropy = 0.00352469933444
+    Total E(T) = -5473.828819259  Free energy = -5473.828854506  E0 = -5473.8288368825
+cycle= 14 E= -5473.828819259  delta_E= -0.000569  |g|= 2.52  |ddm|= 0.504
+    sigma = 0.01  Optimized mu = -0.0609339823392  entropy = 0.00480389577303
+    Total E(T) = -5474.22744617136  Free energy = -5474.22749421031  E0 = -5474.22747019083
+cycle= 15 E= -5474.22744617136  delta_E= -0.399  |g|= 1.83  |ddm|= 1.11
+    sigma = 0.01  Optimized mu = 0.0364448095821  entropy = 5.50458058029
+    Total E(T) = -5471.82570955494  Free energy = -5471.88075536074  E0 = -5471.85323245784
+cycle= 16 E= -5471.82570955494  delta_E=  2.4  |g|= 4.52  |ddm|= 5.62
+    sigma = 0.01  Optimized mu = -0.0331068209404  entropy = 0.5796535377
+    Total E(T) = -5473.96567028522  Free energy = -5473.9714668206  E0 = -5473.96856855291
+cycle= 17 E= -5473.96567028522  delta_E= -2.14  |g|= 2.28  |ddm|= 2.11
+    sigma = 0.01  Optimized mu = -0.0562173882387  entropy = 0.00290011359023
+    Total E(T) = -5474.24584008518  Free energy = -5474.24586908631  E0 = -5474.24585458575
+cycle= 18 E= -5474.24584008518  delta_E= -0.28  |g|= 1.94  |ddm|= 0.922
+    sigma = 0.01  Optimized mu = -0.0620313135115  entropy = 0.00181578499824
+    Total E(T) = -5474.55840294418  Free energy = -5474.55842110203  E0 = -5474.55841202311
+cycle= 19 E= -5474.55840294418  delta_E= -0.313  |g|= 1.42  |ddm|= 1.19
+    sigma = 0.01  Optimized mu = -0.0632683480606  entropy = 0.00170781205191
+    Total E(T) = -5474.76087358785  Free energy = -5474.76089066597  E0 = -5474.76088212691
+cycle= 20 E= -5474.76087358785  delta_E= -0.202  |g|= 0.921  |ddm|= 0.651
+    sigma = 0.01  Optimized mu = -0.0672363022868  entropy = 0.00170434931716
+    Total E(T) = -5474.88497255205  Free energy = -5474.88498959554  E0 = -5474.8849810738
+cycle= 21 E= -5474.88497255205  delta_E= -0.124  |g|= 0.407  |ddm|= 0.738
+    sigma = 0.01  Optimized mu = -0.0617129361195  entropy = 0.00148487386245
+    Total E(T) = -5474.91708935062  Free energy = -5474.91710419936  E0 = -5474.91709677499
+cycle= 22 E= -5474.91708935062  delta_E= -0.0321  |g|= 0.177  |ddm|= 0.639
+    sigma = 0.01  Optimized mu = -0.064193393679  entropy = 0.00146140253185
+    Total E(T) = -5474.92473584441  Free energy = -5474.92475045843  E0 = -5474.92474315142
+cycle= 23 E= -5474.92473584441  delta_E= -0.00765  |g|= 0.0385  |ddm|= 0.268
+    sigma = 0.01  Optimized mu = -0.06332339809  entropy = 0.00140392202419
+    Total E(T) = -5474.92593055996  Free energy = -5474.92594459918  E0 = -5474.92593757957
+cycle= 24 E= -5474.92593055996  delta_E= -0.00119  |g|= 0.0473  |ddm|= 0.148
+    sigma = 0.01  Optimized mu = -0.0629723211658  entropy = 0.00138411996366
+    Total E(T) = -5474.92614028982  Free energy = -5474.92615413102  E0 = -5474.92614721042
+cycle= 25 E= -5474.92614028982  delta_E= -0.00021  |g|= 0.0672  |ddm|= 0.0951
+    sigma = 0.01  Optimized mu = -0.0628262953544  entropy = 0.00137010075107
+    Total E(T) = -5474.9265103437  Free energy = -5474.92652404471  E0 = -5474.92651719421
+cycle= 26 E= -5474.9265103437  delta_E= -0.00037  |g|= 0.0636  |ddm|= 0.0744
+    sigma = 0.01  Optimized mu = -0.0628262068774  entropy = 0.00135568566422
+    Total E(T) = -5474.92706416883  Free energy = -5474.92707772569  E0 = -5474.92707094726
+cycle= 27 E= -5474.92706416883  delta_E= -0.000554  |g|= 0.046  |ddm|= 0.0762
+    sigma = 0.01  Optimized mu = -0.0624165058743  entropy = 0.00135510319375
+    Total E(T) = -5474.9275628311  Free energy = -5474.92757638213  E0 = -5474.92756960662
+cycle= 28 E= -5474.9275628311  delta_E= -0.000499  |g|= 0.015  |ddm|= 0.0762
+    sigma = 0.01  Optimized mu = -0.0624337522044  entropy = 0.00135267947466
+    Total E(T) = -5474.92777259829  Free energy = -5474.92778612509  E0 = -5474.92777936169
+cycle= 29 E= -5474.92777259829  delta_E= -0.00021  |g|= 0.009  |ddm|= 0.0464
+    sigma = 0.01  Optimized mu = -0.0625956595973  entropy = 0.00135230931094
+    Total E(T) = -5474.92791993314  Free energy = -5474.92793345624  E0 = -5474.92792669469
+cycle= 30 E= -5474.92791993314  delta_E= -0.000147  |g|= 0.00573  |ddm|= 0.0443
+    sigma = 0.01  Optimized mu = -0.0626223031602  entropy = 0.00135072876702
+    Total E(T) = -5474.92803741404  Free energy = -5474.92805092132  E0 = -5474.92804416768
+cycle= 31 E= -5474.92803741404  delta_E= -0.000117  |g|= 0.00867  |ddm|= 0.0459
+    sigma = 0.01  Optimized mu = -0.0626359551085  entropy = 0.00134972348793
+    Total E(T) = -5474.92812867589  Free energy = -5474.92814217312  E0 = -5474.92813542451
+cycle= 32 E= -5474.92812867589  delta_E= -9.13e-05  |g|= 0.00878  |ddm|= 0.0402
+    sigma = 0.01  Optimized mu = -0.0626332065928  entropy = 0.00134906522192
+    Total E(T) = -5474.92820337097  Free energy = -5474.92821686162  E0 = -5474.92821011629
+cycle= 33 E= -5474.92820337097  delta_E= -7.47e-05  |g|= 0.00633  |ddm|= 0.0373
+    sigma = 0.01  Optimized mu = -0.062634180549  entropy = 0.00134868555692
+    Total E(T) = -5474.92825575099  Free energy = -5474.92826923785  E0 = -5474.92826249442
+cycle= 34 E= -5474.92825575099  delta_E= -5.24e-05  |g|= 0.00656  |ddm|= 0.0317
+    sigma = 0.01  Optimized mu = -0.0626576257955  entropy = 0.00134964582038
+    Total E(T) = -5474.92829831124  Free energy = -5474.9283118077  E0 = -5474.92830505947
+cycle= 35 E= -5474.92829831124  delta_E= -4.26e-05  |g|= 0.00604  |ddm|= 0.0317
+    sigma = 0.01  Optimized mu = -0.162386803929  entropy = 6.465963903
+    Total E(T) = -5474.88630210202  Free energy = -5474.95096174105  E0 = -5474.91863192154
+Extra cycle  E= -5474.88630210202  delta_E= 0.042  |g|= 0.0765  |ddm|= 0.784
+converged SCF energy = -5474.88630210202  <S^2> = -8.5265128e-14  2S+1 = 1
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpwyqliy97
+max_memory 4000 MB (current use 279 MB)
+number electrons alpha = 152  beta = 150
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -5477.43569736085
+    sigma = 0.01  Optimized mu = -0.00810190954142  entropy = 9.01274361463
+    Total E(T) = -5472.48183234656  Free energy = -5472.57195978271  E0 = -5472.52689606463
+cycle= 1 E= -5472.48183234656  delta_E= 4.95  |g|= 3.57  |ddm|=   12
+    sigma = 0.01  Optimized mu = 0.0355083295149  entropy = 6.59834416402
+    Total E(T) = -5433.40747784888  Free energy = -5433.47346129052  E0 = -5433.4404695697
+cycle= 2 E= -5433.40747784888  delta_E= 39.1  |g|= 15.3  |ddm|= 11.4
+    sigma = 0.01  Optimized mu = -0.158953711853  entropy = 5.86616386312
+    Total E(T) = -5471.58275506459  Free energy = -5471.64141670322  E0 = -5471.61208588391
+cycle= 3 E= -5471.58275506459  delta_E= -38.2  |g|= 5.08  |ddm|= 11.9
+    sigma = 0.01  Optimized mu = -0.0937052410731  entropy = 0.43951185442
+    Total E(T) = -5470.35915240636  Free energy = -5470.36354752491  E0 = -5470.36134996564
+cycle= 4 E= -5470.35915240636  delta_E= 1.22  |g|= 5.55  |ddm|= 6.14
+    sigma = 0.01  Optimized mu = -0.111069979524  entropy = 0.0110068907678
+    Total E(T) = -5470.75368425884  Free energy = -5470.75379432775  E0 = -5470.75373929329
+cycle= 5 E= -5470.75368425884  delta_E= -0.395  |g|= 5.11  |ddm|= 3.72
+    sigma = 0.01  Optimized mu = -0.0490912770164  entropy = 0.00591703274643
+    Total E(T) = -5471.455379014  Free energy = -5471.45543818433  E0 = -5471.45540859917
+cycle= 6 E= -5471.455379014  delta_E= -0.702  |g|= 4.87  |ddm|= 7.33
+    sigma = 0.01  Optimized mu = -0.0482546070976  entropy = 0.00470133393985
+    Total E(T) = -5471.53644382801  Free energy = -5471.53649084135  E0 = -5471.53646733468
+cycle= 7 E= -5471.53644382801  delta_E= -0.0811  |g|= 4.89  |ddm|= 3.05
+    sigma = 0.01  Optimized mu = -0.074165381362  entropy = 0.00452104472113
+    Total E(T) = -5472.1675322148  Free energy = -5472.16757742524  E0 = -5472.16755482002
+cycle= 8 E= -5472.1675322148  delta_E= -0.631  |g|= 4.16  |ddm|= 1.69
+    sigma = 0.01  Optimized mu = -0.0734691954752  entropy = 0.00411245772759
+    Total E(T) = -5472.37490078435  Free energy = -5472.37494190893  E0 = -5472.37492134664
+cycle= 9 E= -5472.37490078435  delta_E= -0.207  |g|= 3.99  |ddm|= 0.771
+    sigma = 0.01  Optimized mu = -0.0711448862537  entropy = 0.00389679095172
+    Total E(T) = -5472.50131213655  Free energy = -5472.50135110446  E0 = -5472.5013316205
+cycle= 10 E= -5472.50131213655  delta_E= -0.126  |g|= 3.91  |ddm|= 0.629
+    sigma = 0.01  Optimized mu = -0.0913106368693  entropy = 0.00652464232441
+    Total E(T) = -5472.55796378523  Free energy = -5472.55802903165  E0 = -5472.55799640844
+cycle= 11 E= -5472.55796378523  delta_E= -0.0567  |g|= 3.67  |ddm|= 1.68
+    sigma = 0.01  Optimized mu = -0.0904871820765  entropy = 0.00512315351828
+    Total E(T) = -5472.59325684294  Free energy = -5472.59330807447  E0 = -5472.59328245871
+cycle= 12 E= -5472.59325684294  delta_E= -0.0353  |g|=  3.7  |ddm|= 0.728
+    sigma = 0.01  Optimized mu = -0.0880165272345  entropy = 0.00475086694467
+    Total E(T) = -5472.6378630043  Free energy = -5472.63791051296  E0 = -5472.63788675863
+cycle= 13 E= -5472.6378630043  delta_E= -0.0446  |g|= 3.69  |ddm|= 0.303
+    sigma = 0.01  Optimized mu = -0.0726351421375  entropy = 0.0137751883871
+    Total E(T) = -5471.64349300656  Free energy = -5471.64363075844  E0 = -5471.6435618825
+cycle= 14 E= -5471.64349300656  delta_E= 0.994  |g|=    4  |ddm|= 3.58
+    sigma = 0.01  Optimized mu = 0.0213273784313  entropy = 6.94102263001
+    Total E(T) = -5455.44541877649  Free energy = -5455.51482900279  E0 = -5455.48012388964
+cycle= 15 E= -5455.44541877649  delta_E= 16.2  |g|= 12.1  |ddm|=    8
+    sigma = 0.01  Optimized mu = -0.0738233707623  entropy = 4.29196418164
+    Total E(T) = -5463.78236519076  Free energy = -5463.82528483258  E0 = -5463.80382501167
+cycle= 16 E= -5463.78236519076  delta_E= -8.34  |g|= 6.84  |ddm|= 4.04
+    sigma = 0.01  Optimized mu = -0.0735545341003  entropy = 1.54527214359
+    Total E(T) = -5468.3021662383  Free energy = -5468.31761895974  E0 = -5468.30989259902
+cycle= 17 E= -5468.3021662383  delta_E= -4.52  |g|= 5.73  |ddm|= 2.19
+    sigma = 0.01  Optimized mu = -0.0690999171801  entropy = 0.0821699791233
+    Total E(T) = -5471.11388915508  Free energy = -5471.11471085487  E0 = -5471.11430000497
+cycle= 18 E= -5471.11388915508  delta_E= -2.81  |g|= 4.26  |ddm|= 1.55
+    sigma = 0.01  Optimized mu = -0.0729878455972  entropy = 0.0354388826314
+    Total E(T) = -5472.69649525785  Free energy = -5472.69684964668  E0 = -5472.69667245227
+cycle= 19 E= -5472.69649525785  delta_E= -1.58  |g|= 3.28  |ddm|= 1.09
+    sigma = 0.01  Optimized mu = -0.0902949435031  entropy = 0.0716843336643
+    Total E(T) = -5473.72165203178  Free energy = -5473.72236887511  E0 = -5473.72201045344
+cycle= 20 E= -5473.72165203178  delta_E= -1.03  |g|= 2.46  |ddm|= 1.98
+    sigma = 0.01  Optimized mu = -0.0882208635975  entropy = 0.0250821285711
+    Total E(T) = -5474.4433687818  Free energy = -5474.44361960309  E0 = -5474.44349419245
+cycle= 21 E= -5474.4433687818  delta_E= -0.722  |g|= 1.43  |ddm|= 1.49
+    sigma = 0.01  Optimized mu = -0.0659895050091  entropy = 0.0116322353086
+    Total E(T) = -5474.73305125377  Free energy = -5474.73316757612  E0 = -5474.73310941494
+cycle= 22 E= -5474.73305125377  delta_E= -0.29  |g|= 0.777  |ddm|= 3.02
+    sigma = 0.01  Optimized mu = -0.0689062827423  entropy = 0.00263341948451
+    Total E(T) = -5474.830636482  Free energy = -5474.8306628162  E0 = -5474.8306496491
+cycle= 23 E= -5474.830636482  delta_E= -0.0976  |g|= 0.151  |ddm|= 1.02
+    sigma = 0.01  Optimized mu = -0.0682993749684  entropy = 0.00196284503084
+    Total E(T) = -5474.84642694398  Free energy = -5474.84644657243  E0 = -5474.84643675821
+cycle= 24 E= -5474.84642694398  delta_E= -0.0158  |g|= 0.0952  |ddm|= 0.513
+    sigma = 0.01  Optimized mu = -0.0666099627966  entropy = 0.00176098530683
+    Total E(T) = -5474.85093014282  Free energy = -5474.85094775268  E0 = -5474.85093894775
+cycle= 25 E= -5474.85093014282  delta_E= -0.0045  |g|= 0.156  |ddm|= 0.285
+    sigma = 0.01  Optimized mu = -0.0659591981121  entropy = 0.00167601381572
+    Total E(T) = -5474.852506525  Free energy = -5474.85252328514  E0 = -5474.85251490507
+cycle= 26 E= -5474.852506525  delta_E= -0.00158  |g|= 0.204  |ddm|= 0.196
+    sigma = 0.01  Optimized mu = -0.0656335850133  entropy = 0.00165304016993
+    Total E(T) = -5474.85151507768  Free energy = -5474.85153160808  E0 = -5474.85152334288
+cycle= 27 E= -5474.85151507768  delta_E= 0.000991  |g|= 0.257  |ddm|= 0.131
+    sigma = 0.01  Optimized mu = -0.0649568538662  entropy = 0.00159989330213
+    Total E(T) = -5474.85240621399  Free energy = -5474.85242221292  E0 = -5474.85241421345
+cycle= 28 E= -5474.85240621399  delta_E= -0.000891  |g|= 0.271  |ddm|= 0.117
+    sigma = 0.01  Optimized mu = -0.0638235858  entropy = 0.00147206613514
+    Total E(T) = -5474.85960216361  Free energy = -5474.85961688427  E0 = -5474.85960952394
+cycle= 29 E= -5474.85960216361  delta_E= -0.0072  |g|= 0.168  |ddm|= 0.251
+    sigma = 0.01  Optimized mu = -0.0644537125166  entropy = 0.00144750118057
+    Total E(T) = -5474.86519407097  Free energy = -5474.86520854598  E0 = -5474.86520130848
+cycle= 30 E= -5474.86519407097  delta_E= -0.00559  |g|= 0.0854  |ddm|= 0.239
+    sigma = 0.01  Optimized mu = -0.0637022444084  entropy = 0.00141650885697
+    Total E(T) = -5474.86792651079  Free energy = -5474.86794067588  E0 = -5474.86793359333
+cycle= 31 E= -5474.86792651079  delta_E= -0.00273  |g|= 0.0203  |ddm|= 0.189
+    sigma = 0.01  Optimized mu = -0.0637697477097  entropy = 0.00140013788161
+    Total E(T) = -5474.86895996902  Free energy = -5474.8689739704  E0 = -5474.86896696971
+cycle= 32 E= -5474.86895996902  delta_E= -0.00103  |g|= 0.0153  |ddm|= 0.113
+    sigma = 0.01  Optimized mu = -0.0641013381347  entropy = 0.0013859498271
+    Total E(T) = -5474.869688533  Free energy = -5474.8697023925  E0 = -5474.86969546275
+cycle= 33 E= -5474.869688533  delta_E= -0.000729  |g|= 0.0271  |ddm|= 0.121
+    sigma = 0.01  Optimized mu = -0.0640768272893  entropy = 0.00138458048172
+    Total E(T) = -5474.87019124941  Free energy = -5474.87020509522  E0 = -5474.87019817231
+cycle= 34 E= -5474.87019124941  delta_E= -0.000503  |g|= 0.0332  |ddm|= 0.0931
+    sigma = 0.01  Optimized mu = -0.064073032581  entropy = 0.001380639206
+    Total E(T) = -5474.87059383445  Free energy = -5474.87060764084  E0 = -5474.87060073764
+cycle= 35 E= -5474.87059383445  delta_E= -0.000403  |g|= 0.031  |ddm|= 0.0805
+    sigma = 0.01  Optimized mu = -0.0640389868762  entropy = 0.00138047318992
+    Total E(T) = -5474.87096238654  Free energy = -5474.87097619128  E0 = -5474.87096928891
+cycle= 36 E= -5474.87096238654  delta_E= -0.000369  |g|= 0.0166  |ddm|= 0.0682
+    sigma = 0.01  Optimized mu = -0.0642451390076  entropy = 0.00138600251657
+    Total E(T) = -5474.8712266031  Free energy = -5474.87124046313  E0 = -5474.87123353312
+cycle= 37 E= -5474.8712266031  delta_E= -0.000264  |g|= 0.0109  |ddm|= 0.0669
+    sigma = 0.01  Optimized mu = -0.0643299279407  entropy = 0.00138258475786
+    Total E(T) = -5474.8714137266  Free energy = -5474.87142755245  E0 = -5474.87142063952
+cycle= 38 E= -5474.8714137266  delta_E= -0.000187  |g|= 0.00907  |ddm|= 0.0593
+    sigma = 0.01  Optimized mu = -0.0641938746692  entropy = 0.00137651229101
+    Total E(T) = -5474.8715528308  Free energy = -5474.87156659593  E0 = -5474.87155971337
+cycle= 39 E= -5474.8715528308  delta_E= -0.000139  |g|= 0.00874  |ddm|= 0.0491
+    sigma = 0.01  Optimized mu = -0.0642242103613  entropy = 0.00137869114694
+    Total E(T) = -5474.87167286799  Free energy = -5474.8716866549  E0 = -5474.87167976145
+cycle= 40 E= -5474.87167286799  delta_E= -0.00012  |g|= 0.00863  |ddm|= 0.0509
+    sigma = 0.01  Optimized mu = -0.0642384786139  entropy = 0.00137959545234
+    Total E(T) = -5474.87176805872  Free energy = -5474.87178185467  E0 = -5474.8717749567
+cycle= 41 E= -5474.87176805872  delta_E= -9.52e-05  |g|= 0.0081  |ddm|= 0.0424
+    sigma = 0.01  Optimized mu = -0.0642180877336  entropy = 0.00137719083687
+    Total E(T) = -5474.87184497804  Free energy = -5474.87185874994  E0 = -5474.87185186399
+cycle= 42 E= -5474.87184497804  delta_E= -7.69e-05  |g|= 0.00782  |ddm|= 0.038
+    sigma = 0.01  Optimized mu = -0.064314646263  entropy = 0.00138232648739
+    Total E(T) = -5474.87192003022  Free energy = -5474.87193385348  E0 = -5474.87192694185
+cycle= 43 E= -5474.87192003022  delta_E= -7.51e-05  |g|= 0.00852  |ddm|= 0.0472
+    sigma = 0.01  Optimized mu = -0.0643193249887  entropy = 0.00138014997193
+    Total E(T) = -5474.8719816521  Free energy = -5474.8719954536  E0 = -5474.87198855285
+cycle= 44 E= -5474.8719816521  delta_E= -6.16e-05  |g|= 0.00793  |ddm|= 0.0378
+    sigma = 0.01  Optimized mu = -0.0642397194822  entropy = 0.00137921656647
+    Total E(T) = -5474.8720381404  Free energy = -5474.87205193256  E0 = -5474.87204503648
+cycle= 45 E= -5474.8720381404  delta_E= -5.65e-05  |g|= 0.00733  |ddm|= 0.0386
+    sigma = 0.01  Optimized mu = -0.0643004496905  entropy = 0.00137910265198
+    Total E(T) = -5474.87208783783  Free energy = -5474.87210162886  E0 = -5474.87209473334
+cycle= 46 E= -5474.87208783783  delta_E= -4.97e-05  |g|= 0.00769  |ddm|= 0.0389
+    sigma = 0.01  Optimized mu = -0.0643430152203  entropy = 0.00137814211183
+    Total E(T) = -5474.87213184248  Free energy = -5474.8721456239  E0 = -5474.87213873319
+cycle= 47 E= -5474.87213184248  delta_E= -4.4e-05  |g|= 0.00538  |ddm|= 0.0321
+    sigma = 0.01  Optimized mu = -0.164012382833  entropy = 6.48872462192
+    Total E(T) = -5474.8301660721  Free energy = -5474.89505331832  E0 = -5474.86260969521
+Extra cycle  E= -5474.8301660721  delta_E= 0.042  |g|= 0.0746  |ddm|= 0.825
+converged SCF energy = -5474.8301660721  <S^2> = 5.6843419e-14  2S+1 = 1
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp9vvw6of2
+max_memory 4000 MB (current use 278 MB)
+number electrons alpha = 152  beta = 150
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -5477.36710499587
+    sigma = 0.01  Optimized mu = -0.00941107651219  entropy = 8.98383742837
+    Total E(T) = -5472.20887324845  Free energy = -5472.29871162273  E0 = -5472.25379243559
+cycle= 1 E= -5472.20887324845  delta_E= 5.16  |g|= 3.58  |ddm|= 11.7
+    sigma = 0.01  Optimized mu = 0.023162891736  entropy = 6.34588434202
+    Total E(T) = -5433.85002538244  Free energy = -5433.91348422586  E0 = -5433.88175480415
+cycle= 2 E= -5433.85002538244  delta_E= 38.4  |g|= 14.4  |ddm|= 11.6
+    sigma = 0.01  Optimized mu = -0.147672059784  entropy = 5.54149918242
+    Total E(T) = -5470.33938171757  Free energy = -5470.39479670939  E0 = -5470.36708921348
+cycle= 3 E= -5470.33938171757  delta_E= -36.5  |g|= 5.95  |ddm|= 12.4
+    sigma = 0.01  Optimized mu = -0.0607413857748  entropy = 1.59926486618
+    Total E(T) = -5468.75101201263  Free energy = -5468.7670046613  E0 = -5468.75900833697
+cycle= 4 E= -5468.75101201263  delta_E= 1.59  |g|= 6.48  |ddm|= 6.04
+    sigma = 0.01  Optimized mu = -0.0894780551828  entropy = 0.0141914261737
+    Total E(T) = -5468.26414593165  Free energy = -5468.26428784591  E0 = -5468.26421688878
+cycle= 5 E= -5468.26414593165  delta_E= 0.487  |g|=  6.6  |ddm|= 3.22
+    sigma = 0.01  Optimized mu = -0.0514587404279  entropy = 0.00506574428252
+    Total E(T) = -5469.88544085213  Free energy = -5469.88549150957  E0 = -5469.88546618085
+cycle= 6 E= -5469.88544085213  delta_E= -1.62  |g|=  5.6  |ddm|= 6.77
+    sigma = 0.01  Optimized mu = -0.0430006987586  entropy = 0.00376735229409
+    Total E(T) = -5470.35393787453  Free energy = -5470.35397554806  E0 = -5470.35395671129
+cycle= 7 E= -5470.35393787453  delta_E= -0.468  |g|= 5.44  |ddm|= 3.19
+    sigma = 0.01  Optimized mu = -0.0536618123982  entropy = 0.00392406175281
+    Total E(T) = -5470.72812278455  Free energy = -5470.72816202517  E0 = -5470.72814240486
+cycle= 8 E= -5470.72812278455  delta_E= -0.374  |g|= 5.15  |ddm|=  1.1
+    sigma = 0.01  Optimized mu = -0.0461500017173  entropy = 0.0175582285216
+    Total E(T) = -5470.52389311587  Free energy = -5470.52406869815  E0 = -5470.52398090701
+cycle= 9 E= -5470.52389311587  delta_E= 0.204  |g|= 5.38  |ddm|=  1.8
+    sigma = 0.01  Optimized mu = -0.0497494167895  entropy = 0.0104844197974
+    Total E(T) = -5470.43329789691  Free energy = -5470.43340274111  E0 = -5470.43335031901
+cycle= 10 E= -5470.43329789691  delta_E= 0.0906  |g|= 5.42  |ddm|= 0.741
+    sigma = 0.01  Optimized mu = -0.0504226981164  entropy = 0.00790605457011
+    Total E(T) = -5470.46571773875  Free energy = -5470.4657967993  E0 = -5470.46575726903
+cycle= 11 E= -5470.46571773875  delta_E= -0.0324  |g|= 5.34  |ddm|= 0.484
+    sigma = 0.01  Optimized mu = -0.0541846042059  entropy = 0.00812271520069
+    Total E(T) = -5470.50619332444  Free energy = -5470.50627455159  E0 = -5470.50623393801
+cycle= 12 E= -5470.50619332444  delta_E= -0.0405  |g|= 5.17  |ddm|= 0.806
+    sigma = 0.01  Optimized mu = -0.0562284063977  entropy = 0.0101747033182
+    Total E(T) = -5470.67581090348  Free energy = -5470.67591265051  E0 = -5470.675861777
+cycle= 13 E= -5470.67581090348  delta_E= -0.17  |g|= 5.04  |ddm|= 1.04
+    sigma = 0.01  Optimized mu = -0.0697691096496  entropy = 0.0408110098849
+    Total E(T) = -5471.01450416456  Free energy = -5471.01491227466  E0 = -5471.01470821961
+cycle= 14 E= -5471.01450416456  delta_E= -0.339  |g|=  4.4  |ddm|= 4.09
+    sigma = 0.01  Optimized mu = 0.0251095700734  entropy = 6.95327952567
+    Total E(T) = -5444.00021339418  Free energy = -5444.06974618943  E0 = -5444.03497979181
+cycle= 15 E= -5444.00021339418  delta_E=   27  |g|= 14.3  |ddm|=  9.9
+    sigma = 0.01  Optimized mu = -0.0896592395588  entropy = 3.19200539084
+    Total E(T) = -5457.74974800944  Free energy = -5457.78166806335  E0 = -5457.76570803639
+cycle= 16 E= -5457.74974800944  delta_E= -13.7  |g|= 8.24  |ddm|= 4.65
+    sigma = 0.01  Optimized mu = -0.0780347073805  entropy = 3.3700946677
+    Total E(T) = -5466.35641523343  Free energy = -5466.39011618011  E0 = -5466.37326570677
+cycle= 17 E= -5466.35641523343  delta_E= -8.61  |g|= 6.02  |ddm|= 2.99
+    sigma = 0.01  Optimized mu = -0.0736366043744  entropy = 0.168031954057
+    Total E(T) = -5468.70642957695  Free energy = -5468.70810989649  E0 = -5468.70726973672
+cycle= 18 E= -5468.70642957695  delta_E= -2.35  |g|= 5.25  |ddm|= 1.45
+    sigma = 0.01  Optimized mu = -0.0782771392828  entropy = 0.036391612012
+    Total E(T) = -5470.12811620008  Free energy = -5470.1284801162  E0 = -5470.12829815814
+cycle= 19 E= -5470.12811620008  delta_E= -1.42  |g|= 4.52  |ddm|=  2.1
+    sigma = 0.01  Optimized mu = -0.0921376828651  entropy = 0.257972458107
+    Total E(T) = -5472.78172403389  Free energy = -5472.78430375847  E0 = -5472.78301389618
+cycle= 20 E= -5472.78172403389  delta_E= -2.65  |g|= 3.19  |ddm|= 2.74
+    sigma = 0.01  Optimized mu = -0.096758283409  entropy = 0.177973269505
+    Total E(T) = -5473.80581418009  Free energy = -5473.80759391279  E0 = -5473.80670404644
+cycle= 21 E= -5473.80581418009  delta_E= -1.02  |g|= 2.17  |ddm|= 2.86
+    sigma = 0.01  Optimized mu = -0.0940106939611  entropy = 0.0484606950641
+    Total E(T) = -5474.34993978844  Free energy = -5474.35042439539  E0 = -5474.35018209191
+cycle= 22 E= -5474.34993978844  delta_E= -0.544  |g|= 1.43  |ddm|= 1.88
+    sigma = 0.01  Optimized mu = -0.0903827354915  entropy = 0.036417490025
+    Total E(T) = -5474.70946590425  Free energy = -5474.70983007915  E0 = -5474.7096479917
+cycle= 23 E= -5474.70946590425  delta_E= -0.36  |g|= 0.693  |ddm|= 2.44
+    sigma = 0.01  Optimized mu = -0.0721468949794  entropy = 0.0087728896717
+    Total E(T) = -5474.71464868898  Free energy = -5474.71473641787  E0 = -5474.71469255342
+cycle= 24 E= -5474.71464868898  delta_E= -0.00518  |g|= 0.798  |ddm|= 1.38
+    sigma = 0.01  Optimized mu = -0.0705716613052  entropy = 0.00300626339552
+    Total E(T) = -5474.69793532095  Free energy = -5474.69796538358  E0 = -5474.69795035226
+cycle= 25 E= -5474.69793532095  delta_E= 0.0167  |g|= 0.801  |ddm|= 0.753
+    sigma = 0.01  Optimized mu = -0.0659266690913  entropy = 0.00234714912689
+    Total E(T) = -5474.68842441586  Free energy = -5474.68844788736  E0 = -5474.68843615161
+cycle= 26 E= -5474.68842441586  delta_E= 0.00951  |g|= 0.869  |ddm|= 0.518
+    sigma = 0.01  Optimized mu = -0.0658210252089  entropy = 0.0022170193053
+    Total E(T) = -5474.69400784432  Free energy = -5474.69403001452  E0 = -5474.69401892942
+cycle= 27 E= -5474.69400784432  delta_E= -0.00558  |g|= 0.822  |ddm|= 0.336
+    sigma = 0.01  Optimized mu = -0.0653233558217  entropy = 0.00201652731403
+    Total E(T) = -5474.73695001149  Free energy = -5474.73697017676  E0 = -5474.73696009413
+cycle= 28 E= -5474.73695001149  delta_E= -0.0429  |g|= 0.631  |ddm|= 0.383
+    sigma = 0.01  Optimized mu = -0.0657633666923  entropy = 0.00172023142615
+    Total E(T) = -5474.76714322169  Free energy = -5474.767160424  E0 = -5474.76715182284
+cycle= 29 E= -5474.76714322169  delta_E= -0.0302  |g|= 0.519  |ddm|= 0.376
+    sigma = 0.01  Optimized mu = -0.0659470914605  entropy = 0.00171914861854
+    Total E(T) = -5474.78799094135  Free energy = -5474.78800813283  E0 = -5474.78799953709
+cycle= 30 E= -5474.78799094135  delta_E= -0.0208  |g|= 0.402  |ddm|= 0.235
+    sigma = 0.01  Optimized mu = -0.0652320072552  entropy = 0.00159620552344
+    Total E(T) = -5474.80104986529  Free energy = -5474.80106582734  E0 = -5474.80105784631
+cycle= 31 E= -5474.80104986529  delta_E= -0.0131  |g|= 0.323  |ddm|= 0.242
+    sigma = 0.01  Optimized mu = -0.0652134988712  entropy = 0.00153219162324
+    Total E(T) = -5474.81345143527  Free energy = -5474.81346675719  E0 = -5474.81345909623
+cycle= 32 E= -5474.81345143527  delta_E= -0.0124  |g|= 0.194  |ddm|= 0.245
+    sigma = 0.01  Optimized mu = -0.0652866935803  entropy = 0.00152784911513
+    Total E(T) = -5474.81998102099  Free energy = -5474.81999629948  E0 = -5474.81998866024
+cycle= 33 E= -5474.81998102099  delta_E= -0.00653  |g|= 0.106  |ddm|= 0.187
+    sigma = 0.01  Optimized mu = -0.065890245819  entropy = 0.00151342333331
+    Total E(T) = -5474.82282540167  Free energy = -5474.82284053591  E0 = -5474.82283296879
+cycle= 34 E= -5474.82282540167  delta_E= -0.00284  |g|= 0.0547  |ddm|= 0.138
+    sigma = 0.01  Optimized mu = -0.0656500916694  entropy = 0.00150096683199
+    Total E(T) = -5474.82403084617  Free energy = -5474.82404585584  E0 = -5474.82403835101
+cycle= 35 E= -5474.82403084617  delta_E= -0.00121  |g|= 0.0262  |ddm|= 0.0932
+    sigma = 0.01  Optimized mu = -0.0658449564132  entropy = 0.00150042743052
+    Total E(T) = -5474.82461455849  Free energy = -5474.82462956276  E0 = -5474.82462206063
+cycle= 36 E= -5474.82461455849  delta_E= -0.000584  |g|= 0.0219  |ddm|= 0.0769
+    sigma = 0.01  Optimized mu = -0.0659504509493  entropy = 0.00148973484915
+    Total E(T) = -5474.82506630056  Free energy = -5474.8250811979  E0 = -5474.82507374923
+cycle= 37 E= -5474.82506630056  delta_E= -0.000452  |g|= 0.0212  |ddm|= 0.0776
+    sigma = 0.01  Optimized mu = -0.0660084690534  entropy = 0.00148109460217
+    Total E(T) = -5474.82545281418  Free energy = -5474.82546762512  E0 = -5474.82546021965
+cycle= 38 E= -5474.82545281418  delta_E= -0.000387  |g|= 0.0189  |ddm|= 0.0732
+    sigma = 0.01  Optimized mu = -0.0658724409716  entropy = 0.00147414201396
+    Total E(T) = -5474.82578510407  Free energy = -5474.82579984549  E0 = -5474.82579247478
+cycle= 39 E= -5474.82578510407  delta_E= -0.000332  |g|= 0.0162  |ddm|= 0.0662
+    sigma = 0.01  Optimized mu = -0.066310425305  entropy = 0.00147918449075
+    Total E(T) = -5474.82604983896  Free energy = -5474.8260646308  E0 = -5474.82605723488
+cycle= 40 E= -5474.82604983896  delta_E= -0.000265  |g|= 0.015  |ddm|= 0.0683
+    sigma = 0.01  Optimized mu = -0.066023774582  entropy = 0.00146674108637
+    Total E(T) = -5474.82630755955  Free energy = -5474.82632222697  E0 = -5474.82631489326
+cycle= 41 E= -5474.82630755955  delta_E= -0.000258  |g|= 0.0115  |ddm|= 0.0742
+    sigma = 0.01  Optimized mu = -0.0659739117491  entropy = 0.00146325232562
+    Total E(T) = -5474.82649633422  Free energy = -5474.82651096674  E0 = -5474.82650365048
+cycle= 42 E= -5474.82649633422  delta_E= -0.000189  |g|= 0.00919  |ddm|= 0.0546
+    sigma = 0.01  Optimized mu = -0.0661183426229  entropy = 0.00147068978447
+    Total E(T) = -5474.82665262084  Free energy = -5474.82666732774  E0 = -5474.82665997429
+cycle= 43 E= -5474.82665262084  delta_E= -0.000156  |g|= 0.00717  |ddm|= 0.0538
+    sigma = 0.01  Optimized mu = -0.0661171669473  entropy = 0.00146367141248
+    Total E(T) = -5474.82677697459  Free energy = -5474.82679161131  E0 = -5474.82678429295
+cycle= 44 E= -5474.82677697459  delta_E= -0.000124  |g|= 0.00677  |ddm|= 0.0478
+    sigma = 0.01  Optimized mu = -0.0661189881688  entropy = 0.0014636192459
+    Total E(T) = -5474.82687728489  Free energy = -5474.82689192108  E0 = -5474.82688460298
+cycle= 45 E= -5474.82687728489  delta_E= -0.0001  |g|= 0.00676  |ddm|= 0.0433
+    sigma = 0.01  Optimized mu = -0.0661011005291  entropy = 0.00146394911544
+    Total E(T) = -5474.82695713978  Free energy = -5474.82697177927  E0 = -5474.82696445952
+cycle= 46 E= -5474.82695713978  delta_E= -7.99e-05  |g|= 0.00489  |ddm|= 0.036
+    sigma = 0.01  Optimized mu = -0.066120859619  entropy = 0.00146643651936
+    Total E(T) = -5474.82702621585  Free energy = -5474.82704088022  E0 = -5474.82703354804
+cycle= 47 E= -5474.82702621585  delta_E= -6.91e-05  |g|= 0.00559  |ddm|= 0.0381
+    sigma = 0.01  Optimized mu = -0.066152068181  entropy = 0.00146122311909
+    Total E(T) = -5474.82709159718  Free energy = -5474.82710620941  E0 = -5474.82709890329
+cycle= 48 E= -5474.82709159718  delta_E= -6.54e-05  |g|= 0.00686  |ddm|= 0.0442
+    sigma = 0.01  Optimized mu = -0.0661622393366  entropy = 0.00145979319963
+    Total E(T) = -5474.82714658574  Free energy = -5474.82716118367  E0 = -5474.8271538847
+cycle= 49 E= -5474.82714658574  delta_E= -5.5e-05  |g|= 0.00676  |ddm|= 0.0365
+    sigma = 0.01  Optimized mu = -0.0661517679787  entropy = 0.00145927361109
+    Total E(T) = -5474.82719667988  Free energy = -5474.82721127262  E0 = -5474.82720397625
+cycle= 50 E= -5474.82719667988  delta_E= -5.01e-05  |g|= 0.00674  |ddm|= 0.0379
+    sigma = 0.01  Optimized mu = -0.0661315424986  entropy = 0.00146039024388
+    Total E(T) = -5474.82723992878  Free energy = -5474.82725453269  E0 = -5474.82724723073
+cycle= 51 E= -5474.82723992878  delta_E= -4.32e-05  |g|= 0.00649  |ddm|= 0.0344
+    sigma = 0.01  Optimized mu = -0.165872904886  entropy = 6.74708787815
+    Total E(T) = -5474.78382396681  Free energy = -5474.85129484559  E0 = -5474.8175594062
+Extra cycle  E= -5474.78382396681  delta_E= 0.0434  |g|= 0.088  |ddm|= 0.837
+converged SCF energy = -5474.78382396681  <S^2> = 1.4210855e-13  2S+1 = 1
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpv73ij3vi
+max_memory 4000 MB (current use 278 MB)
+number electrons alpha = 152  beta = 150
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -5477.32674627927
+    sigma = 0.01  Optimized mu = -0.0102398087998  entropy = 8.94216368315
+    Total E(T) = -5472.02608694064  Free energy = -5472.11550857747  E0 = -5472.07079775905
+cycle= 1 E= -5472.02608694064  delta_E=  5.3  |g|=  3.5  |ddm|= 11.6
+    sigma = 0.01  Optimized mu = 0.0113604452354  entropy = 6.1213327067
+    Total E(T) = -5434.27613485089  Free energy = -5434.33734817795  E0 = -5434.30674151442
+cycle= 2 E= -5434.27613485089  delta_E= 37.7  |g|= 13.6  |ddm|= 11.5
+    sigma = 0.01  Optimized mu = -0.134417624919  entropy = 5.33706136558
+    Total E(T) = -5469.50800454936  Free energy = -5469.56137516301  E0 = -5469.53468985618
+cycle= 3 E= -5469.50800454936  delta_E= -35.2  |g|= 6.14  |ddm|= 12.6
+    sigma = 0.01  Optimized mu = -0.036143156594  entropy = 2.56378519372
+    Total E(T) = -5467.48680510186  Free energy = -5467.5124429538  E0 = -5467.49962402783
+cycle= 4 E= -5467.48680510186  delta_E= 2.02  |g|= 7.02  |ddm|=  5.7
+    sigma = 0.01  Optimized mu = -0.0523779837372  entropy = 0.242579931205
+    Total E(T) = -5466.23718708854  Free energy = -5466.23961288785  E0 = -5466.23839998819
+cycle= 5 E= -5466.23718708854  delta_E= 1.25  |g|= 7.48  |ddm|=  3.4
+    sigma = 0.01  Optimized mu = -0.0392002023303  entropy = 0.00732736052539
+    Total E(T) = -5465.14487451547  Free energy = -5465.14494778908  E0 = -5465.14491115228
+cycle= 6 E= -5465.14487451547  delta_E= 1.09  |g|= 8.33  |ddm|= 2.12
+    sigma = 0.01  Optimized mu = -0.0164669637649  entropy = 0.00792916300501
+    Total E(T) = -5464.91045438894  Free energy = -5464.91053368057  E0 = -5464.91049403476
+cycle= 7 E= -5464.91045438894  delta_E= 0.234  |g|= 8.27  |ddm|= 4.88
+    sigma = 0.01  Optimized mu = -0.055222584707  entropy = 0.0029718798974
+    Total E(T) = -5466.52067476108  Free energy = -5466.52070447988  E0 = -5466.52068962048
+cycle= 8 E= -5466.52067476108  delta_E= -1.61  |g|=  7.1  |ddm|= 2.83
+    sigma = 0.01  Optimized mu = -0.0625470498112  entropy = 0.0056151818244
+    Total E(T) = -5467.72992534951  Free energy = -5467.72998150133  E0 = -5467.72995342542
+cycle= 9 E= -5467.72992534951  delta_E= -1.21  |g|= 6.31  |ddm|= 2.71
+    sigma = 0.01  Optimized mu = -0.063955829152  entropy = 0.00415759601533
+    Total E(T) = -5468.28624385379  Free energy = -5468.28628542975  E0 = -5468.28626464177
+cycle= 10 E= -5468.28624385379  delta_E= -0.556  |g|= 6.01  |ddm|= 1.27
+    sigma = 0.01  Optimized mu = -0.0642795266132  entropy = 0.00426159021372
+    Total E(T) = -5468.49801497807  Free energy = -5468.49805759397  E0 = -5468.49803628602
+cycle= 11 E= -5468.49801497807  delta_E= -0.212  |g|= 5.93  |ddm|= 0.749
+    sigma = 0.01  Optimized mu = -0.0646123177669  entropy = 0.00393706913118
+    Total E(T) = -5468.60926710976  Free energy = -5468.60930648046  E0 = -5468.60928679511
+cycle= 12 E= -5468.60926710976  delta_E= -0.111  |g|=  5.8  |ddm|= 0.375
+    sigma = 0.01  Optimized mu = -0.0653874393718  entropy = 0.00371521734673
+    Total E(T) = -5468.76452224141  Free energy = -5468.76455939358  E0 = -5468.7645408175
+cycle= 13 E= -5468.76452224141  delta_E= -0.155  |g|= 5.81  |ddm|= 0.343
+    sigma = 0.01  Optimized mu = -0.0776576387786  entropy = 0.0502764878896
+    Total E(T) = -5468.89473134965  Free energy = -5468.89523411453  E0 = -5468.89498273209
+cycle= 14 E= -5468.89473134965  delta_E= -0.13  |g|=  5.8  |ddm|=    5
+    sigma = 0.01  Optimized mu = -0.0257561877722  entropy = 4.69609991155
+    Total E(T) = -5427.79489362183  Free energy = -5427.84185462095  E0 = -5427.81837412139
+cycle= 15 E= -5427.79489362183  delta_E= 41.1  |g|= 16.6  |ddm|= 17.7
+    sigma = 0.01  Optimized mu = -0.141813270648  entropy = 4.0034596898
+    Total E(T) = -5471.39628062912  Free energy = -5471.43631522602  E0 = -5471.41629792757
+cycle= 16 E= -5471.39628062912  delta_E= -43.6  |g|=    4  |ddm|= 14.8
+    sigma = 0.01  Optimized mu = -0.0389084956539  entropy = 1.96760427321
+    Total E(T) = -5473.26847893612  Free energy = -5473.28815497885  E0 = -5473.27831695749
+cycle= 17 E= -5473.26847893612  delta_E= -1.87  |g|=  1.9  |ddm|=  2.9
+    sigma = 0.01  Optimized mu = -0.0495962063409  entropy = 0.247596256786
+    Total E(T) = -5473.2353979941  Free energy = -5473.23787395667  E0 = -5473.23663597539
+cycle= 18 E= -5473.2353979941  delta_E= 0.0331  |g|= 2.55  |ddm|= 1.73
+    sigma = 0.01  Optimized mu = -0.0231878152523  entropy = 0.713300065745
+    Total E(T) = -5474.02867889998  Free energy = -5474.03581190064  E0 = -5474.03224540031
+cycle= 19 E= -5474.02867889998  delta_E= -0.793  |g|= 1.82  |ddm|= 2.38
+    sigma = 0.01  Optimized mu = 0.0231559152201  entropy = 3.74298613685
+    Total E(T) = -5473.77746440155  Free energy = -5473.81489426292  E0 = -5473.79617933224
+cycle= 20 E= -5473.77746440155  delta_E= 0.251  |g|= 2.38  |ddm|= 2.69
+    sigma = 0.01  Optimized mu = -0.0367349793772  entropy = 0.0687101110397
+    Total E(T) = -5474.52748658252  Free energy = -5474.52817368363  E0 = -5474.52783013308
+cycle= 21 E= -5474.52748658252  delta_E= -0.75  |g|=  1.2  |ddm|=  1.9
+    sigma = 0.01  Optimized mu = -0.0545667392656  entropy = 0.00404610411766
+    Total E(T) = -5474.46199322229  Free energy = -5474.46203368334  E0 = -5474.46201345282
+cycle= 22 E= -5474.46199322229  delta_E= 0.0655  |g|= 1.33  |ddm|= 0.934
+    sigma = 0.01  Optimized mu = -0.0572893075365  entropy = 0.00352570092789
+    Total E(T) = -5474.37829322986  Free energy = -5474.37832848687  E0 = -5474.37831085837
+cycle= 23 E= -5474.37829322986  delta_E= 0.0837  |g|= 1.47  |ddm|= 0.683
+    sigma = 0.01  Optimized mu = -0.0593921481779  entropy = 0.00291263350169
+    Total E(T) = -5474.35928698973  Free energy = -5474.35931611606  E0 = -5474.3593015529
+cycle= 24 E= -5474.35928698973  delta_E= 0.019  |g|= 1.52  |ddm|= 0.304
+    sigma = 0.01  Optimized mu = -0.0602490682391  entropy = 0.00281590231483
+    Total E(T) = -5474.32616136716  Free energy = -5474.32618952618  E0 = -5474.32617544667
+cycle= 25 E= -5474.32616136716  delta_E= 0.0331  |g|= 1.58  |ddm|= 0.422
+    sigma = 0.01  Optimized mu = -0.070091366416  entropy = 0.00245846728964
+    Total E(T) = -5474.37317948898  Free energy = -5474.37320407365  E0 = -5474.37319178131
+cycle= 26 E= -5474.37317948898  delta_E= -0.047  |g|=  1.5  |ddm|= 0.619
+    sigma = 0.01  Optimized mu = -0.0556273568145  entropy = 0.00372797161077
+    Total E(T) = -5474.11000415414  Free energy = -5474.11004143386  E0 = -5474.110022794
+cycle= 27 E= -5474.11000415414  delta_E= 0.263  |g|= 1.89  |ddm|= 0.508
+    sigma = 0.01  Optimized mu = -0.069653050131  entropy = 0.00223041397958
+    Total E(T) = -5474.33572620627  Free energy = -5474.33574851041  E0 = -5474.33573735834
+cycle= 28 E= -5474.33572620627  delta_E= -0.226  |g|= 1.52  |ddm|= 0.828
+    sigma = 0.01  Optimized mu = -0.0722088964916  entropy = 0.00225563825123
+    Total E(T) = -5474.50401852748  Free energy = -5474.50404108386  E0 = -5474.50402980567
+cycle= 29 E= -5474.50401852748  delta_E= -0.168  |g|= 1.23  |ddm|= 0.584
+    sigma = 0.01  Optimized mu = -0.0732693523599  entropy = 0.00214561821008
+    Total E(T) = -5474.61764148041  Free energy = -5474.6176629366  E0 = -5474.6176522085
+cycle= 30 E= -5474.61764148041  delta_E= -0.114  |g|= 0.979  |ddm|= 0.291
+    sigma = 0.01  Optimized mu = -0.0652149100298  entropy = 0.00170903418576
+    Total E(T) = -5474.65099366496  Free energy = -5474.6510107553  E0 = -5474.65100221013
+cycle= 31 E= -5474.65099366496  delta_E= -0.0334  |g|= 0.916  |ddm|= 0.711
+    sigma = 0.01  Optimized mu = -0.0698886387341  entropy = 0.0019285054305
+    Total E(T) = -5474.74609701585  Free energy = -5474.74611630091  E0 = -5474.74610665838
+cycle= 32 E= -5474.74609701585  delta_E= -0.0951  |g|= 0.463  |ddm|= 0.429
+    sigma = 0.01  Optimized mu = -0.0682355599081  entropy = 0.00181157304028
+    Total E(T) = -5474.78330726643  Free energy = -5474.78332538216  E0 = -5474.7833163243
+cycle= 33 E= -5474.78330726643  delta_E= -0.0372  |g|= 0.132  |ddm|= 0.441
+    sigma = 0.01  Optimized mu = -0.069273898946  entropy = 0.0017354252247
+    Total E(T) = -5474.78839834063  Free energy = -5474.78841569489  E0 = -5474.78840701776
+cycle= 34 E= -5474.78839834063  delta_E= -0.00509  |g|= 0.0323  |ddm|= 0.198
+    sigma = 0.01  Optimized mu = -0.0684788590382  entropy = 0.00168085100028
+    Total E(T) = -5474.78906882149  Free energy = -5474.78908563  E0 = -5474.78907722574
+cycle= 35 E= -5474.78906882149  delta_E= -0.00067  |g|= 0.0413  |ddm|= 0.104
+    sigma = 0.01  Optimized mu = -0.0681378748721  entropy = 0.00165590662918
+    Total E(T) = -5474.78959550459  Free energy = -5474.78961206366  E0 = -5474.78960378413
+cycle= 36 E= -5474.78959550459  delta_E= -0.000527  |g|= 0.025  |ddm|= 0.0769
+    sigma = 0.01  Optimized mu = -0.0680862379193  entropy = 0.00164707978098
+    Total E(T) = -5474.78999164021  Free energy = -5474.79000811101  E0 = -5474.78999987561
+cycle= 37 E= -5474.78999164021  delta_E= -0.000396  |g|= 0.00866  |ddm|= 0.0575
+    sigma = 0.01  Optimized mu = -0.0682250643642  entropy = 0.00164081676862
+    Total E(T) = -5474.7903424889  Free energy = -5474.79035889707  E0 = -5474.79035069299
+cycle= 38 E= -5474.7903424889  delta_E= -0.000351  |g|= 0.00733  |ddm|= 0.0567
+    sigma = 0.01  Optimized mu = -0.0681418691887  entropy = 0.00163501586127
+    Total E(T) = -5474.79061962871  Free energy = -5474.79063597887  E0 = -5474.79062780379
+cycle= 39 E= -5474.79061962871  delta_E= -0.000277  |g|= 0.00664  |ddm|= 0.0481
+    sigma = 0.01  Optimized mu = -0.0679716502969  entropy = 0.00162619311181
+    Total E(T) = -5474.79089458269  Free energy = -5474.79091084462  E0 = -5474.79090271366
+cycle= 40 E= -5474.79089458269  delta_E= -0.000275  |g|= 0.00895  |ddm|= 0.0526
+    sigma = 0.01  Optimized mu = -0.0678770697806  entropy = 0.00162382565106
+    Total E(T) = -5474.79112831132  Free energy = -5474.79114454957  E0 = -5474.79113643044
+cycle= 41 E= -5474.79112831132  delta_E= -0.000234  |g|= 0.015  |ddm|= 0.0506
+    sigma = 0.01  Optimized mu = -0.0680153502877  entropy = 0.00161716745893
+    Total E(T) = -5474.79135298676  Free energy = -5474.79136915844  E0 = -5474.7913610726
+cycle= 42 E= -5474.79135298676  delta_E= -0.000225  |g|= 0.0137  |ddm|= 0.0502
+    sigma = 0.01  Optimized mu = -0.0679783561699  entropy = 0.00161237879394
+    Total E(T) = -5474.79156002905  Free energy = -5474.79157615284  E0 = -5474.79156809095
+cycle= 43 E= -5474.79156002905  delta_E= -0.000207  |g|= 0.0168  |ddm|= 0.0519
+    sigma = 0.01  Optimized mu = -0.0680606426941  entropy = 0.00161155613197
+    Total E(T) = -5474.79175710519  Free energy = -5474.79177322075  E0 = -5474.79176516297
+cycle= 44 E= -5474.79175710519  delta_E= -0.000197  |g|= 0.0131  |ddm|= 0.0467
+    sigma = 0.01  Optimized mu = -0.0679561361627  entropy = 0.00160178551224
+    Total E(T) = -5474.79192165592  Free energy = -5474.79193767378  E0 = -5474.79192966485
+cycle= 45 E= -5474.79192165592  delta_E= -0.000165  |g|= 0.015  |ddm|= 0.0482
+    sigma = 0.01  Optimized mu = -0.067971449986  entropy = 0.00159911563038
+    Total E(T) = -5474.79206024663  Free energy = -5474.79207623779  E0 = -5474.79206824221
+cycle= 46 E= -5474.79206024663  delta_E= -0.000139  |g|= 0.0149  |ddm|= 0.0414
+    sigma = 0.01  Optimized mu = -0.0678952847263  entropy = 0.00159764714304
+    Total E(T) = -5474.79220037622  Free energy = -5474.79221635269  E0 = -5474.79220836446
+cycle= 47 E= -5474.79220037622  delta_E= -0.00014  |g|= 0.0191  |ddm|= 0.0564
+    sigma = 0.01  Optimized mu = -0.0678896182939  entropy = 0.00159434654726
+    Total E(T) = -5474.79233229796  Free energy = -5474.79234824143  E0 = -5474.79234026969
+cycle= 48 E= -5474.79233229796  delta_E= -0.000132  |g|= 0.0169  |ddm|= 0.0457
+    sigma = 0.01  Optimized mu = -0.0678912383663  entropy = 0.00159185428813
+    Total E(T) = -5474.79244285637  Free energy = -5474.79245877491  E0 = -5474.79245081564
+cycle= 49 E= -5474.79244285637  delta_E= -0.000111  |g|= 0.0147  |ddm|= 0.0403
+    sigma = 0.01  Optimized mu = -0.0678908976323  entropy = 0.0015869428567
+    Total E(T) = -5474.7925322377  Free energy = -5474.79254810713  E0 = -5474.79254017241
+cycle= 50 E= -5474.7925322377  delta_E= -8.94e-05  |g|= 0.0125  |ddm|= 0.0378
+    sigma = 0.01  Optimized mu = -0.0679397550851  entropy = 0.00158637058815
+    Total E(T) = -5474.79260916763  Free energy = -5474.79262503134  E0 = -5474.79261709948
+cycle= 51 E= -5474.79260916763  delta_E= -7.69e-05  |g|= 0.0103  |ddm|= 0.0359
+    sigma = 0.01  Optimized mu = -0.0679180924128  entropy = 0.00157880777853
+    Total E(T) = -5474.79266188353  Free energy = -5474.79267767161  E0 = -5474.79266977757
+cycle= 52 E= -5474.79266188353  delta_E= -5.27e-05  |g|= 0.0133  |ddm|= 0.0376
+    sigma = 0.01  Optimized mu = -0.0679114374257  entropy = 0.00158125794495
+    Total E(T) = -5474.79271156687  Free energy = -5474.79272737945  E0 = -5474.79271947316
+cycle= 53 E= -5474.79271156687  delta_E= -4.97e-05  |g|= 0.012  |ddm|= 0.0292
+    sigma = 0.01  Optimized mu = -0.0679008115478  entropy = 0.00158112565195
+    Total E(T) = -5474.79275563948  Free energy = -5474.79277145073  E0 = -5474.79276354511
+cycle= 54 E= -5474.79275563948  delta_E= -4.41e-05  |g|= 0.0102  |ddm|= 0.0289
+    sigma = 0.01  Optimized mu = -0.0679073416857  entropy = 0.00157769183652
+    Total E(T) = -5474.79278988301  Free energy = -5474.79280565993  E0 = -5474.79279777147
+cycle= 55 E= -5474.79278988301  delta_E= -3.42e-05  |g|= 0.00918  |ddm|= 0.0273
+    sigma = 0.01  Optimized mu = -0.0678677737264  entropy = 0.00157669093382
+    Total E(T) = -5474.79281771379  Free energy = -5474.7928334807  E0 = -5474.79282559725
+cycle= 56 E= -5474.79281771379  delta_E= -2.78e-05  |g|= 0.0071  |ddm|= 0.0222
+    sigma = 0.01  Optimized mu = -0.0678951257345  entropy = 0.00157880708731
+    Total E(T) = -5474.79284041187  Free energy = -5474.79285619994  E0 = -5474.79284830591
+cycle= 57 E= -5474.79284041187  delta_E= -2.27e-05  |g|= 0.00524  |ddm|= 0.0199
+    sigma = 0.01  Optimized mu = -0.167685556784  entropy = 7.12516504493
+    Total E(T) = -5474.74654833299  Free energy = -5474.81779998344  E0 = -5474.78217415821
+Extra cycle  E= -5474.74654833299  delta_E= 0.0463  |g|= 0.131  |ddm|= 0.863
+converged SCF energy = -5474.74654833299  <S^2> = 2.2737368e-13  2S+1 = 1
+begin cluster2
+
+
+******** <class 'pyscf.scf.addons.SmearingDFRKS'> ********
+method = SmearingDFRKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp68d53jdv
+max_memory 4000 MB (current use 739 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+Initial guess from minao.
+init E= -5327.63687371615
+    sigma = 0.01  Optimized mu = 0.00373592503513  entropy = 8.66950124794
+    Total E(T) = -5324.67831645495  Free energy = -5324.76501146743  E0 = -5324.72166396119
+cycle= 1 E= -5324.67831645495  delta_E= 2.96  |g|= 0.425  |ddm|= 16.7
+    sigma = 0.01  Optimized mu = -0.0663985024256  entropy = 3.15400823884
+    Total E(T) = -5324.76505149946  Free energy = -5324.79659158185  E0 = -5324.78082154065
+cycle= 2 E= -5324.76505149946  delta_E= -0.0867  |g|= 0.607  |ddm|= 4.02
+    sigma = 0.01  Optimized mu = -0.0753860087952  entropy = 2.77458791281
+    Total E(T) = -5324.83532245443  Free energy = -5324.86306833356  E0 = -5324.84919539399
+cycle= 3 E= -5324.83532245443  delta_E= -0.0703  |g|= 0.132  |ddm|= 2.53
+    sigma = 0.01  Optimized mu = -0.0652039383682  entropy = 2.77391221119
+    Total E(T) = -5324.84712515604  Free energy = -5324.87486427815  E0 = -5324.86099471709
+cycle= 4 E= -5324.84712515604  delta_E= -0.0118  |g|= 0.0526  |ddm|= 0.935
+    sigma = 0.01  Optimized mu = -0.0653527454921  entropy = 2.77368208656
+    Total E(T) = -5324.84943731585  Free energy = -5324.87717413671  E0 = -5324.86330572628
+cycle= 5 E= -5324.84943731585  delta_E= -0.00231  |g|= 0.0336  |ddm|= 0.431
+    sigma = 0.01  Optimized mu = -0.0647531547293  entropy = 2.7735911534
+    Total E(T) = -5324.85025633976  Free energy = -5324.8779922513  E0 = -5324.86412429553
+cycle= 6 E= -5324.85025633976  delta_E= -0.000819  |g|= 0.0148  |ddm|= 0.212
+    sigma = 0.01  Optimized mu = -0.0652322036401  entropy = 2.77307287301
+    Total E(T) = -5324.85056580274  Free energy = -5324.87829653146  E0 = -5324.8644311671
+cycle= 7 E= -5324.85056580274  delta_E= -0.000309  |g|= 0.00484  |ddm|= 0.131
+    sigma = 0.01  Optimized mu = -0.0652364846623  entropy = 2.75478008565
+    Total E(T) = -5324.85080421218  Free energy = -5324.87835201304  E0 = -5324.86457811261
+cycle= 8 E= -5324.85080421218  delta_E= -0.000238  |g|= 0.00501  |ddm|= 0.144
+    sigma = 0.01  Optimized mu = -0.065203700506  entropy = 2.30450682912
+    Total E(T) = -5324.85305148546  Free energy = -5324.87609655375  E0 = -5324.86457401961
+cycle= 9 E= -5324.85305148546  delta_E= -0.00225  |g|= 0.0247  |ddm|= 0.537
+    sigma = 0.01  Optimized mu = -0.0651211751427  entropy = 0.192035522528
+    Total E(T) = -5324.86005412762  Free energy = -5324.86197448285  E0 = -5324.86101430524
+cycle= 10 E= -5324.86005412762  delta_E= -0.007  |g|= 0.0639  |ddm|= 0.721
+    sigma = 0.01  Optimized mu = -0.063049319961  entropy = 0.0032406152207
+    Total E(T) = -5324.86029216957  Free energy = -5324.86032457572  E0 = -5324.86030837264
+cycle= 11 E= -5324.86029216957  delta_E= -0.000238  |g|= 0.0669  |ddm|= 0.0336
+    sigma = 0.01  Optimized mu = -0.0629954060237  entropy = 0.00300808036579
+    Total E(T) = -5324.8601703317  Free energy = -5324.8602004125  E0 = -5324.8601853721
+cycle= 12 E= -5324.8601703317  delta_E= 0.000122  |g|= 0.0689  |ddm|= 0.0279
+    sigma = 0.01  Optimized mu = -0.0631617839253  entropy = 0.00317826947952
+    Total E(T) = -5324.85988922312  Free energy = -5324.85992100581  E0 = -5324.85990511447
+cycle= 13 E= -5324.85988922312  delta_E= 0.000281  |g|= 0.0732  |ddm|= 0.0332
+    sigma = 0.01  Optimized mu = -0.0632579815975  entropy = 0.00329073269456
+    Total E(T) = -5324.85961698313  Free energy = -5324.85964989045  E0 = -5324.85963343679
+cycle= 14 E= -5324.85961698313  delta_E= 0.000272  |g|= 0.0744  |ddm|= 0.027
+    sigma = 0.01  Optimized mu = -0.0632627297954  entropy = 0.00330364886551
+    Total E(T) = -5324.85946445446  Free energy = -5324.85949749095  E0 = -5324.8594809727
+cycle= 15 E= -5324.85946445446  delta_E= 0.000153  |g|= 0.0758  |ddm|= 0.0152
+    sigma = 0.01  Optimized mu = -0.0632760171456  entropy = 0.00333529969292
+    Total E(T) = -5324.85936413822  Free energy = -5324.85939749121  E0 = -5324.85938081472
+cycle= 16 E= -5324.85936413822  delta_E= 0.0001  |g|= 0.0769  |ddm|= 0.0113
+    sigma = 0.01  Optimized mu = -0.0633688733435  entropy = 0.00340168687212
+    Total E(T) = -5324.85921319094  Free energy = -5324.8592472078  E0 = -5324.85923019937
+cycle= 17 E= -5324.85921319094  delta_E= 0.000151  |g|= 0.0786  |ddm|= 0.0152
+    sigma = 0.01  Optimized mu = -0.0634017500094  entropy = 0.00347492132523
+    Total E(T) = -5324.85906741455  Free energy = -5324.85910216376  E0 = -5324.85908478916
+cycle= 18 E= -5324.85906741455  delta_E= 0.000146  |g|= 0.08  |ddm|= 0.0148
+    sigma = 0.01  Optimized mu = -0.0633866832768  entropy = 0.00344143075913
+    Total E(T) = -5324.85903480961  Free energy = -5324.85906922392  E0 = -5324.85905201676
+cycle= 19 E= -5324.85903480961  delta_E= 3.26e-05  |g|= 0.0802  |ddm|= 0.00838
+    sigma = 0.01  Optimized mu = -0.0634814795102  entropy = 0.00357215855584
+    Total E(T) = -5324.8588425544  Free energy = -5324.85887827599  E0 = -5324.8588604152
+cycle= 20 E= -5324.8588425544  delta_E= 0.000192  |g|= 0.0822  |ddm|= 0.0155
+    sigma = 0.01  Optimized mu = -0.0628991538649  entropy = 0.00283463486976
+    Total E(T) = -5324.85981122204  Free energy = -5324.85983956838  E0 = -5324.85982539521
+cycle= 21 E= -5324.85981122204  delta_E= -0.000969  |g|= 0.069  |ddm|= 0.0866
+    sigma = 0.01  Optimized mu = -0.0604576212047  entropy = 0.00153970722832
+    Total E(T) = -5324.86218097694  Free energy = -5324.86219637402  E0 = -5324.86218867548
+cycle= 22 E= -5324.86218097694  delta_E= -0.00237  |g|= 0.0276  |ddm|= 0.305
+    sigma = 0.01  Optimized mu = -0.0605213282704  entropy = 0.00157796254537
+    Total E(T) = -5324.86268095619  Free energy = -5324.86269673582  E0 = -5324.862688846
+cycle= 23 E= -5324.86268095619  delta_E= -0.0005  |g|= 0.0165  |ddm|= 0.117
+    sigma = 0.01  Optimized mu = -0.0605120368123  entropy = 0.00157476383586
+    Total E(T) = -5324.86283876311  Free energy = -5324.86285451074  E0 = -5324.86284663692
+cycle= 24 E= -5324.86283876311  delta_E= -0.000158  |g|= 0.00887  |ddm|= 0.0619
+    sigma = 0.01  Optimized mu = -0.060536592879  entropy = 0.00157334976279
+    Total E(T) = -5324.86289756226  Free energy = -5324.86291329575  E0 = -5324.862905429
+cycle= 25 E= -5324.86289756226  delta_E= -5.88e-05  |g|= 0.00511  |ddm|= 0.0365
+    sigma = 0.01  Optimized mu = -0.0605106254542  entropy = 0.00157261816568
+    Total E(T) = -5324.86292362756  Free energy = -5324.86293935374  E0 = -5324.86293149065
+cycle= 26 E= -5324.86292362756  delta_E= -2.61e-05  |g|= 0.00305  |ddm|= 0.0241
+    sigma = 0.01  Optimized mu = -0.159583601225  entropy = 6.29709616742
+    Total E(T) = -5324.82686561301  Free energy = -5324.88983657469  E0 = -5324.85835109385
+Extra cycle  E= -5324.82686561301  delta_E= 0.0361  |g|= 0.0624  |ddm|= 1.14
+converged SCF energy = -5324.82686561301

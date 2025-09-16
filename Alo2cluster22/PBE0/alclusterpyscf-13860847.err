@@ -1,0 +1,52 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 358, in str2atm
+    coords = [float(x) for x in dat[1:4]]
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 358, in <listcomp>
+    coords = [float(x) for x in dat[1:4]]
+ValueError: could not convert string to float: '{Z}'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "alcluster.py", line 47, in <module>
+    cluster.build()
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 2540, in build
+    self._atom = self.format_atom(self.atom, unit=self.unit)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 387, in format_atom
+    fmt_atoms = [str2atm(line) for line in fmt_atoms]
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 387, in <listcomp>
+    fmt_atoms = [str2atm(line) for line in fmt_atoms]
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 363, in str2atm
+    coords = list(eval(','.join(dat[1:4])))
+  File "<string>", line 1, in <module>
+NameError: name 'Z' is not defined
+srun: error: a135: task 0: Exited with exit code 1
+Command exited with non-zero status 1
+	Command being timed: "srun --cpu-bind=cores python -u alcluster.py"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1407
+	Voluntary context switches: 44
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

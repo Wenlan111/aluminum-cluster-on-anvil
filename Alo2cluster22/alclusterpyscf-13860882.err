@@ -1,0 +1,8 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 13860882.0 ON a135 CANCELLED AT 2025-09-10T11:16:32 ***
+slurmstepd: error: *** JOB 13860882 ON a135 CANCELLED AT 2025-09-10T11:16:32 ***
