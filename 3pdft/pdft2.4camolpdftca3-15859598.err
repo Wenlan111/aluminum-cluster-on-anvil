@@ -1,0 +1,7 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+/var/spool/slurm/job15859598/slurm_script: line 35: 2181055 Killed                  python -u "$SCRIPT"
+[2026-03-24T20:52:39.388] error: Detected 1 oom_kill event in StepId=15859598.batch. Some of the step tasks have been OOM Killed.

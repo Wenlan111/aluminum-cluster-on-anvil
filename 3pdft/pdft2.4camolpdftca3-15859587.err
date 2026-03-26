@@ -1,0 +1,9 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "3capdft.py", line 8, in <module>
+    import fragments
+ModuleNotFoundError: No module named 'fragments'
