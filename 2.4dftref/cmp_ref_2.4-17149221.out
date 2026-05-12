@@ -1,0 +1,36 @@
+Job ID: 17149221
+PWD: /anvil/scratch/x-wmiao/alcluster50/Al_cluster/anew/newbasis/2.4dftref
+checkpoint=../pdft_checkpointnewb6.pkl  checkref=al2.4_sigma0.002_last_dm.pkl
+xyz=3.xyz  grid_level=3  old_chk=../al2.4.chk
+
+==============================================================================
+   checkpoint = ../pdft_checkpointnewb6.pkl
+     checkref = al2.4_sigma0.002_last_dm.pkl
+          xyz = 3.xyz
+   grid_level = 3
+     frag_dir = ..
+      old_chk = ../al2.4.chk
+       charge = 0
+         spin = 2
+==============================================================================
+[mol] NAO=1544  nelec=(334, 332)  natoms=52  (0.0s)
+[grid] ngrid=948528  (2.2s)
+[new ref] sigma=0.002  converged=True  last_cycle=160  E_tot=-12266.4666771738
+[new ref] N(n_ref_new) = 666.000067  (11.3s)
+[pdft ckpt] step=884  Ef=-12278.030196  L1(stored)=0.560684
+[pdft ckpt] nf source: checkpoint nl+nr (len=948528)
+[pdft ckpt] N(n_f)       = 666.000071
+[old ref] N(n_ref_old) = 666.000069  (11.7s)
+
+---- pairwise (a) - (b)  L1 / L2 / max|dn| / int(dn) ----
+          n_f - n_ref_new    L1= 2.645143e+00  L2= 6.727673e-02  max|dn|= 1.145e-01  int(dn)= 3.477e-06
+          n_f - n_ref_old    L1= 5.606841e-01  L2= 5.968687e-02  max|dn|= 9.315e-02  int(dn)= 2.095e-06
+    n_ref_new - n_ref_old    L1= 2.374132e+00  L2= 3.668971e-02  max|dn|= 1.137e-01  int(dn)=-1.382e-06
+
+---- interpretation ----
+  L1(n_f, n_ref_new) : L1 your *new* PDFT would start at if
+                       warm-started from this checkpoint.
+  L1(n_f, n_ref_old) : sanity check vs. old PDFT printed L1.
+  L1(n_ref_new, n_ref_old): how much the reference target moved.
+
+Done.
