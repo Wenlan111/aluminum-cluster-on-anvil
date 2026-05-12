@@ -97,12 +97,15 @@ Al    D
 #ref pbe calculation for O2/Al50 at 2.4A
 mol, scf_dict = scfchk.load_scf('al2.4.chk')
 mf = dft.UKS(mol)
-mo_coeff  = scf_dict['mo_coeff']
-mo_occ    = scf_dict['mo_occ']
-mo_energy = scf_dict['mo_energy']
-Daref, Dbref = mf.make_rdm1(mo_coeff, mo_occ) 
+#mo_coeff  = scf_dict['mo_coeff']
+#mo_occ    = scf_dict['mo_occ']
+#mo_energy = scf_dict['mo_energy']
+#Daref, Dbref = mf.make_rdm1(mo_coeff, mo_occ) 
 #nref = D2n(Daref+Dbref, phi)
-
+with open("../2.4dftref/al2.4_sigma0.002_last_dm.pkl", "rb") as f:
+    data_ref = pickle.load(f)
+Daref = data_ref["Da_last_normal"]
+Dbref = data_ref["Db_last_normal"]
 #total geo
 geo = gto.Mole()
 geo.atom = "3.xyz"
@@ -194,10 +197,10 @@ ao_values_l2 = dft.numint.eval_ao(lgeo2, coords, deriv=1)
 phi_l1, phi_l1_x, phi_l1_y, phi_l1_z = ao_values_l1  
 phi_l2, phi_l2_x, phi_l2_y, phi_l2_z = ao_values_l2 
 
-data = pickle.load(open("pdft_checkpointnewb3.pkl", "rb"))
+data = pickle.load(open("pdft_checkpointnewb6.pkl", "rb"))
 # define init parameters
-vp = data["vp"]
-#vp = 0
+#vp = data["vp"]
+vp = 0
 maxiter = 35000
 #step_size = 0.12
 steps = np.hstack((np.linspace(0.5, 0.1, 5000), 0.1*np.ones(maxiter-5000)))
@@ -207,25 +210,26 @@ Efconv = 1e-7
 # VH
 #load the results from previous run
 #data = pickle.load(open("pdft_checkpointpbe.pkl", "rb"))
-Vpl  = data["Vpl"]
-Vpr  = data["Vpr"]
+#Vpl  = data["Vpl"]
+#Vpr  = data["Vpr"]
 
 # initial run
-#l.scf(None)
-#r.scf(None)
-#El = l.get_E()
-#Er = r.get_E()
-#Ef = El+Er
-Ef = data["Ef"]
+rdft1.D=data["dm_ig1"]
+rdft2.D=data["dm_ig2"]
+l.scf(None)
+r.scf(None)
+El = l.get_E()
+Er = r.get_E()
+Ef = El+Er
+#Ef = data["Ef"]
 nref = D2n(Daref+Dbref, phi)
-#Dal, Dbl = l.get_D()
-#Dar, Dbr = r.get_D()
-Dal, Dbl = data["Dal"], data["Dbl"] 
-Dar, Dbr = data["Dar"], data["Dbr"]
-nl = data["nl"]
-nr = data["nr"]
-#nl = D2n(Dal+Dbl,phi_l1)
-#nr = D2n(Dar+Dbr,phi_r1)
+Dal, Dbl = l.get_D()
+Dar, Dbr = r.get_D()
+#Dal, Dbl = data["Dal"], data["Dbl"] 
+#Dar, Dbr = data["Dar"], data["Dbr"]
+##nl = data["nl"]
+nl = D2n(Dal+Dbl,phi_l1)
+nr = D2n(Dar+Dbr,phi_r1)
 nf = nl + nr
 print("N:",np.sum(nf*w))
 L1 = np.sum(np.abs(nf-nref)*w)
@@ -233,11 +237,9 @@ L1 = np.sum(np.abs(nf-nref)*w)
 print(f"init Ef={Ef:.5f} L1={L1:.4f}.")
 Efold = Ef
 nold = nf
-checkpoint = "pdft_checkpointnewb4.pkl"
+checkpoint = "pdft_checkpointnewref.pkl"
 #PDFT-scf-LOOP
-start = data["step"] + 1
-rdft1.D=data["dm_ig1"]
-rdft2.D=data["dm_ig2"]
+start = 0
 for itera in range(start, len(steps)):
 
 #for itera, thisstep in enumerate(steps):
