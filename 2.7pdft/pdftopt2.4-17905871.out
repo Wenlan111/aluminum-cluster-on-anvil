@@ -1,0 +1,4 @@
+pyscf max mem 1054630
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+building grid (level 3)...

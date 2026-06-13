@@ -1,0 +1,5 @@
+'../inversion_ks_for_energy3.pkl' -> './inversion_ks_for_energy3.pkl'
+n2v PySCFGrider memory patch: active
+n2v get_S3: chunked (chunk=4096); DF wrapper (INVERSION_S3_DF=True)
+n2v from: /home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/__init__.py
+Warm-start skipped: v_pbs shape (1544,) != expected (3088,)

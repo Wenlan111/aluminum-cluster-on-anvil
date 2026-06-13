@@ -1,0 +1,31 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "inversion.py", line 314, in <module>
+    inv.invert(
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/inverter.py", line 502, in invert
+    self.wuyang(opt_max_iter, **keywords)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/methods/wuyang.py", line 46, in wuyang
+    opt_results = minimize( fun = self.lagrangian_wy,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_minimize.py", line 718, in minimize
+    res = _minimize_trust_krylov(fun, x0, args, jac, hess, hessp,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_trustregion_krylov.py", line 51, in _minimize_trust_krylov
+    return _minimize_trust_region(fun, x0, args=args, jac=jac,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_trustregion.py", line 174, in _minimize_trust_region
+    sf = _prepare_scalar_function(fun, x0, jac=jac, hess=hess, args=args)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_optimize.py", line 332, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 158, in __init__
+    self._update_fun()
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 251, in _update_fun
+    self._update_fun_impl()
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 155, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/methods/wuyang.py", line 112, in lagrangian_wy
+    T = self.T_pbs
+AttributeError: 'Inverter' object has no attribute 'T_pbs'

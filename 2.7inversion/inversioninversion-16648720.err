@@ -1,0 +1,13 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "inversion.py", line 306, in <module>
+    inv.invert("WuYang", guide_components="hartree")
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/inverter.py", line 502, in invert
+    self.wuyang(opt_max_iter, **keywords)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/methods/wuyang.py", line 58, in wuyang
+    raise ValueError("Optimization was unsucessful (|grad|=%.2e) within %i iterations, "
+ValueError: Optimization was unsucessful (|grad|=4.62e-03) within 50 iterations, try a different initial guess. Maximum number of iterations has been exceeded.

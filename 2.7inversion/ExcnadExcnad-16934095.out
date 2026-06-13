@@ -1,0 +1,33 @@
+Exc = -943.1179535249213
+Excl = -16.85305442961654 Excr = -926.2177142877626
+Excna = -0.047184807542066665
+Nl = 16.205852634553136
+Nr = 649.7940993925151
+N = 665.9999520270676
+Ehartreel = 100.0498398661761
+Ehartreer = 24357.8974420892
+Ehartreel_proj = 100.0498255892829
+Ehartreer_proj = 24357.894440315267
+Ehartreetot = 25341.933858508568
+Ehartree nad = 883.9865765531904
+Ehartreetot_projmolnad = 883.989592604019
+T_kineticl = 149.89159805090327 T_kineticr = 12092.798861680218
+T_kinetic = 12242.69045973112
+T_kineticl (projected Dl) = 149.89157888845537 T_kineticr (projected Dr) = 12092.798915072484
+T_kinetic (projected Dl+Dr) = 12242.69049396094
+T_kinetic (projected Dr in mol frame) = 12092.798915072484
+T_kinetic (projected Dl in mol frame) = 149.89157888845537
+T_kinetic (projected Dl+Dr in mol frame) = 12242.690493960938
+rVnuclear = -66361.98485736191 lVnuclear = -409.8449509626007
+V_nuclear = -68529.02880033452
+rVnuclear_proj = -66361.9816752275 lVnuclear_proj = -409.84491692019856
+V_nuclear_proj = -66771.8265921477
+Vnuclearnad = -1757.1989920100095
+rV_nuclear_projmol = -67234.32002076472 lV_nuclear_projmol = -1294.708779569749
+V_nuclear_projmol = -68529.02880033446
+Vnuclearnad_projmol = 4.547473508864641e-12
+Enuc_grid_l = -409.8448977193258 Enuc_grid_r = -66361.98847281814
+Enuc_grid_nf = -68529.0342830933
+Enuc_nad_grid = -1757.2009125558252
+=== Python finished ===
+All done.

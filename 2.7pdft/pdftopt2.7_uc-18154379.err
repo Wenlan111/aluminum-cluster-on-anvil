@@ -1,0 +1,10 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Overwritten attributes  Vp  of <class 'pyscf.soscf.newton_ah.SecondOrderUKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFRKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFUKS'>
+/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/scipy/optimize/_minimize.py:718: RuntimeWarning: Maximum number of iterations has been exceeded.
+  res = _minimize_trust_krylov(fun, x0, args, jac, hess, hessp,

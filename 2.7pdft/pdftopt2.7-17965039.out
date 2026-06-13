@@ -1,0 +1,11 @@
+pyscf max mem 1001393
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+[setup] build_system t=1.7s
+building grid (level 3)...
+[setup] grid t=89.9s
+computing S3 tensors (DF)...
+S3 shapes: left=(116, 116, 1336) right=(1528, 1528, 1336) ref=(1544, 1544, 1336) t=1108.6s
+[warm-start] loaded pdft_optimizer.pkl
+=== Python finished ===
+All done.

@@ -120,7 +120,7 @@ class FragmentDFT:
 
              mf.direct_scf = True
              mf.max_cycle = 200
-             mf.conv_tol = 1e-6 
+             mf.conv_tol = 5e-5
              mf.verbose = 4
 
              mf.grids.level = 3

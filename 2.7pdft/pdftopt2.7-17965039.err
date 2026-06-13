@@ -1,0 +1,13 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "pdftoptimizer.py", line 608, in <module>
+    main()
+  File "pdftoptimizer.py", line 572, in main
+    b0, fragment_dm_guess = lagrangian_initial_guess(sys, s3.shape[2], phi_pbs)
+  File "pdftoptimizer.py", line 384, in lagrangian_initial_guess
+    if itera == 1:
+NameError: name 'itera' is not defined

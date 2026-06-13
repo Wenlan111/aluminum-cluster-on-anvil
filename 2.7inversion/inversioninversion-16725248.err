@@ -1,0 +1,11 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "inversion.py", line 285, in <module>
+    Dalnew = project_one(Dal,Sl,Tl)
+  File "inversion.py", line 281, in project_one
+    M = T.T @ D_old @ T
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 116 is different from 128)

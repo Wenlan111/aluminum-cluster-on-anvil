@@ -1,0 +1,8 @@
+n2v PySCFGrider memory patch: active
+n2v get_S3: chunked (chunk=4096); DF wrapper (INVERSION_S3_DF=True)
+n2v from: /home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/__init__.py
+tot grids = 314808
+Wu–Yang x0 from inversion_v_pbs_last_iter.pkl: v_pbs shape (2672,)
+Wu–Yang did not converge; saved last v_pbs ((2672,)) to inversion_v_pbs_last_iter.pkl
+=== Python finished ===
+All done.

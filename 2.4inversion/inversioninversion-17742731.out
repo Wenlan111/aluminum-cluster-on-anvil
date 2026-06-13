@@ -1,0 +1,51 @@
+n2v PySCFGrider memory patch: active
+n2v get_S3: chunked (chunk=4096); DF wrapper (INVERSION_S3_DF=True)
+n2v from: /home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/__init__.py
+tot grids = 314808
+Wu–Yang x0 from inversion_v_pbs_last_iter.pkl: v_pbs shape (2672,)
+Optimization Successful within 6 iterations! |grad|=1.97e-02
+Inversion (WuYang) wall time: 250.847 s
+nalpha = 334
+nbeta = 332
+Ne_a = 333.9999999932412
+Ne_b = 331.99999999327736
+Ne_inv = 665.9999999865199
+T (electronic kinetic, Ha) = 12241.038796800993
+V (nuclear attraction, Ha) = -68597.96540576815
+E_hartree (Ha) = 25380.49899135798
+tot grids = 948528
+E_xc (PBE, Ha) = -943.2399765103062
+E_nn (nuclear repulsion, Ha) = 19653.2406053842
+E_ks_total (Ha) = -12266.426988735286
+============================================================
+Electron-count comparison
+------------------------------------------------------------
+nref (dftref sigma=0.002 DM)  = 666.000000
+nf   (pkl projected to mol)   = 665.995074
+nf2  (pkl in fragment AOs)    = 666.000000  (L=16.667789, R=649.332211)
+ninv (inverted density)       = 666.000000
+------------------------------------------------------------
+nf   - nref = -4.926e-03
+nf2  - nref = -4.877e-11
+ninv - nref = -1.353e-08
+nf   - nf2  = -4.926e-03
+ninv - nf   = +4.926e-03
+============================================================
+tot grids = 948528
+============================================================
+Density (real-space) comparison on mol grid (level=3)
+------------------------------------------------------------
+int rho_ref = 666.000067
+int rho_f   = 665.995144
+int rho_f2  = 666.000070  (L=16.667797, R=649.332274)
+int rho_inv = 666.000067
+------------------------------------------------------------
+rho_f   - rho_ref       int|dρ|=5.6298e-01  max|dρ|=1.0386e-01
+rho_f2  - rho_ref       int|dρ|=5.6369e-01  max|dρ|=1.0414e-01
+rho_inv - rho_ref       int|dρ|=1.7979e+00  max|dρ|=1.1161e+00
+rho_f   - rho_f2        int|dρ|=7.6801e-02  max|dρ|=1.9732e-02
+rho_inv - rho_f         int|dρ|=1.5236e+00  max|dρ|=1.1159e+00
+rho_inv - rho_f2        int|dρ|=1.5608e+00  max|dρ|=1.1160e+00
+============================================================
+=== Python finished ===
+All done.

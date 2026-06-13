@@ -1,0 +1,12 @@
+pyscf max mem 1029176
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+building grid (level 3, warm-start + diagnostics)...
+computing S3 tensors (DF)...
+S3 shapes: left=(116, 116, 140) right=(1528, 1528, 1336) ref=(1544, 1544, 1336)
+[warm-start] loaded pdft_checkpointnewref6.pkl
+[init] pickle vp length 948528 != npbs 1336; projecting from Vp(AO) if available
+[init] projected Vpl onto PBS, residual=1.13173e+01
+[init] projected Vpr onto PBS, residual=5.68701e+00
+=== Python finished ===
+All done.

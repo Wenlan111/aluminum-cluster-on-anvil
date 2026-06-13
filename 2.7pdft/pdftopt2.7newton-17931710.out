@@ -1,0 +1,168 @@
+pyscf max mem 1005672
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+building grid (level 3)...
+computing S3 tensors (DF)...
+S3 shapes: left=(116, 116, 1336) right=(1528, 1528, 1336) ref=(1544, 1544, 1336)
+[warm-start] loaded pdft_optimizer.pkl
+[warm-start] rdft1.D ← pickle dm_ig1
+[warm-start] rdft2.D ← pickle dm_ig2
+[init] b0 from optimizer checkpoint, npbs=1336
+[warm-start] Lagrangian x0 ready, |b0| = 8.92432e-01
+starting L-BFGS-B optimization
+[optimize] step 1 SCF: dm0 from dm_ig1/dm_ig2 on rdft1/rdft2
+dm0 check None
+converged SCF energy = -150.226693714537  <S^2> = 2.0045399  2S+1 = 3.003025
+dm0 check None
+converged SCF energy = -150.244985829666  <S^2> = 0.92978559  2S+1 = 2.1723587
+dm0 check [[ 3.82007961e-01  6.13406544e-01 -1.27497239e-01 ...  2.72140783e-06
+  -3.72263392e-07 -6.34501104e-06]
+ [ 6.13406544e-01  1.01245104e+00 -3.37150185e-01 ...  7.84886428e-06
+  -1.62650082e-06 -1.74860282e-05]
+ [-1.27497239e-01 -3.37150185e-01  6.82430471e-01 ... -1.80675482e-05
+   3.30208396e-06  4.21296312e-05]
+ ...
+ [ 2.72140783e-06  7.84886428e-06 -1.80675482e-05 ...  6.94594003e-07
+  -2.09873866e-07 -7.60169713e-08]
+ [-3.72263392e-07 -1.62650082e-06  3.30208396e-06 ... -2.09873866e-07
+   4.89058997e-07 -4.08825023e-08]
+ [-6.34501104e-06 -1.74860282e-05  4.21296312e-05 ... -7.60169713e-08
+  -4.08825023e-08  1.08094600e-06]]
+
+
+
+
+******** <class 'pyscf.soscf.newton_ah.SecondOrderDFRKS'> ********
+method = SecondOrderDFRKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpqtc5khs0
+max_memory 4000 MB (current use 85710 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-06
+******** <class 'pyscf.df.df_jk.DFRKS'> Newton solver flags ********
+SCF tol = 5e-05
+conv_tol_grad = None
+max. SCF cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpqtc5khs0
+max_cycle_inner = 12
+max_stepsize = 0.05
+ah_start_tol = 1e+09
+ah_level_shift = 0
+ah_conv_tol = 1e-12
+ah_lindep = 1e-14
+ah_start_cycle = 1
+ah_max_cycle = 40
+ah_grad_trust_region = 2.5
+kf_interval = 4
+kf_trust_region = 5
+canonicalization = True
+max_memory 4000 MB (current use 85710 MB)
+Set conv_tol_grad to 0.00707107
+  HOMO = -0.159383565281044  LUMO = -0.152686977920259
+Initial guess E= -12115.7804064642  |g|= 1.11398
+macro= 0  E= -12116.2299960126  delta_E= -0.44959  |g|= 0.138976  3 KF 18 JK
+macro= 1  E= -12116.2437029642  delta_E= -0.013707  |g|= 0.00844039  3 KF 17 JK
+macro= 2  E= -12116.2437107848  delta_E= -7.82054e-06  |g|= 0.00402149  1 KF 3 JK
+Canonicalize SCF orbitals
+macro X = 3  E=-12116.2437107848  |g|= 0.00402149  total 8 KF 42 JK
+converged SCF energy = -12116.2437107848
+dm0 check [[[ 1.91025757e-01  3.06761084e-01 -6.38853438e-02 ...  1.24125574e-06
+   -1.96279348e-07 -3.05724694e-06]
+  [ 3.06761084e-01  5.06378356e-01 -1.68935379e-01 ...  3.60383975e-06
+   -8.41112812e-07 -8.43013908e-06]
+  [-6.38853438e-02 -1.68935379e-01  3.42056245e-01 ... -8.24838927e-06
+    1.72467804e-06  2.02670625e-05]
+  ...
+  [ 1.24125574e-06  3.60383975e-06 -8.24838927e-06 ...  3.59699274e-07
+   -1.12681786e-07 -2.98018224e-08]
+  [-1.96279348e-07 -8.41112812e-07  1.72467804e-06 ... -1.12681786e-07
+    2.48611084e-07 -8.48535282e-09]
+  [-3.05724694e-06 -8.43013908e-06  2.02670625e-05 ... -2.98018224e-08
+   -8.48535282e-09  5.18058842e-07]]
+
+ [[ 1.91002521e-01  3.06698503e-01 -6.37412772e-02 ...  1.32525081e-06
+   -2.20240286e-07 -2.89072051e-06]
+  [ 3.06698503e-01  5.06212205e-01 -1.68555996e-01 ...  3.82858060e-06
+   -9.03427371e-07 -7.98731889e-06]
+  [-6.37412772e-02 -1.68555996e-01  3.41192933e-01 ... -8.78954649e-06
+    1.85925436e-06  1.92277046e-05]
+  ...
+  [ 1.32525081e-06  3.82858060e-06 -8.78954649e-06 ...  3.48053783e-07
+   -1.12851780e-07 -2.57965403e-08]
+  [-2.20240286e-07 -9.03427371e-07  1.85925436e-06 ... -1.12851780e-07
+    2.51502971e-07 -1.11672450e-08]
+  [-2.89072051e-06 -7.98731889e-06  1.92277046e-05 ... -2.57965403e-08
+   -1.11672450e-08  5.07119370e-07]]]
+
+
+
+
+******** <class 'pyscf.soscf.newton_ah.SecondOrderDFUKS'> ********
+method = SecondOrderDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpm8r42x8v
+max_memory 4000 MB (current use 85917 MB)
+number electrons alpha = 325  beta = 323
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-06
+******** <class 'pyscf.df.df_jk.DFUKS'> Newton solver flags ********
+SCF tol = 5e-05
+conv_tol_grad = None
+max. SCF cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpm8r42x8v
+max_cycle_inner = 12
+max_stepsize = 0.05
+ah_start_tol = 1e+09
+ah_level_shift = 0
+ah_conv_tol = 1e-12
+ah_lindep = 1e-14
+ah_start_cycle = 1
+ah_max_cycle = 40
+ah_grad_trust_region = 2.5
+kf_interval = 4
+kf_trust_region = 5
+canonicalization = True
+max_memory 4000 MB (current use 85917 MB)
+Set conv_tol_grad to 0.00707107
+  alpha nocc = 325  HOMO = -0.30442450353395  LUMO = -0.29629921753866
+  beta  nocc = 323  HOMO = -0.306162329666202  LUMO = -0.30157001614149
+Initial guess E= -12115.3499252563  |g|= 0.770111
+macro= 0  E= -12115.7824614615  delta_E= -0.432536  |g|= 0.0672303  4 KF 21 JK

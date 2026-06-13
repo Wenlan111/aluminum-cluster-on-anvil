@@ -1,0 +1,9 @@
+pyscf max mem 1029175
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+building grid (level 3)...
+computing S3 tensors (DF)...
+converged SCF energy = -149.301031247696  <S^2> = 2.0041439  2S+1 = 3.0027613
+
+WARN: Singularity detected in overlap matrix (condition number = 2.21e+09). SCF may be inaccurate and hard to converge.
+

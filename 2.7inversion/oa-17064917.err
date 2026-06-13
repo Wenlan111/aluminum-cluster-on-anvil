@@ -1,0 +1,34 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/lib/chkfile.py", line 164, in load_mol
+    with h5py.File(chkfile, 'r') as fh5:
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/h5py/_hl/files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'al2.4.chk', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "oa.py", line 70, in <module>
+    mol, scf_dict = scfchk.load_scf('al2.4.chk')
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/scf/chkfile.py", line 26, in load_scf
+    return load_mol(chkfile), load(chkfile, 'scf')
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/lib/chkfile.py", line 169, in load_mol
+    with h5py.File(chkfile, 'r') as fh5:
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/h5py/_hl/files.py", line 235, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'al2.4.chk', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)

@@ -1,0 +1,19 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "2.4capdft.py", line 161, in <module>
+    rgeo1.build()
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 2540, in build
+    self._atom = self.format_atom(self.atom, unit=self.unit)
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 385, in format_atom
+    fmt_atoms = from_zmatrix('\n'.join(fmt_atoms))
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 3947, in from_zmatrix
+    atoms = list(zip([_atom_symbol(x) for x in symbols], coord))
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/gto/mole.py", line 3947, in <listcomp>
+    atoms = list(zip([_atom_symbol(x) for x in symbols], coord))
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/pyscf/data/elements.py", line 1218, in _atom_symbol
+    raise RuntimeError('Unsupported atom symbol %s' % a)
+RuntimeError: Unsupported atom symbol RGEO.XYZ

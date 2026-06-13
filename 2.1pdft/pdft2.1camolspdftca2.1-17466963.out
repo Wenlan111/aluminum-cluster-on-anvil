@@ -1,0 +1,9 @@
+pyscf max mem 1056242
+begin fragment ensemble
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+N: 666.0000505383157
+init Ef=-12266.21518 L1=1.0590.
+=== Python finished ===
+
+All done.

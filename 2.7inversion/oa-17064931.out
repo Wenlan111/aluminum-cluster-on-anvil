@@ -1,0 +1,7 @@
+grid level=3, npoints=948528
+eval_ao mol done
+eval_ao rgeo1 done
+S = 0.01013238266817677
+OA1 = 1.0000, OA2 = 0.9999, OA3 = 0.9908
+=== Python finished ===
+All done.

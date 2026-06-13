@@ -1,0 +1,173 @@
+pyscf max mem 1055888
+SLURM_CPUS_PER_TASK = 64
+OMP_NUM_THREADS = 64
+MKL_NUM_THREADS = 64
+OPENBLAS_NUM_THREADS = 64
+PySCF lib.num_threads() = 64
+=== AO -> PBS diagnostic (no SCF / no optimizer) ===
+[config] OLD_PKL=pdft2.7_checkpointnewref.pkl
+[config] AO_TO_PBS_OUT=ao_to_pbs_fit.pkl
+[config] RIDGE (selected output)=1.000e-08
+[config] RIDGE_LIST=[0.0, 1e-10, 1e-08, 1e-06, 0.0001, 0.001, 0.01, 0.1, 1.0]
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+[setup] grid: ngrid=948528, nao_full=1544, npbs=1336
+[setup] S3 shapes left=(116, 116, 1336), right=(1528, 1528, 1336), full=(1544, 1544, 1336)
+[load] loaded keys: ['Dal', 'Dar', 'Dbl', 'Dbr', 'Ef', 'L1', 'Vpl', 'Vpr', 'dm_ig1', 'dm_ig2', 'nl', 'nr', 'step', 'vp']
+
+=== Ridge scan: AO fit vs coefficient norm tradeoff ===
+
+--- ridge = 0.000e+00 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved via lstsq, rank=1336, min/max singular=1.772814e-04/2.288332e+01, residual_vec_len=1
+[fit] |b|=1.268055e+02, max|b|=6.220645e+01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.847913e-01 abs=3.814152e-01 ||V_old||=2.064032e+00 ||V_fit||=2.023582e+00 max|diff|=9.632090e-02
+[AO fit] right rel=1.683377e-01 abs=1.970156e-01 ||V_old||=1.170359e+00 ||V_fit||=1.201251e+00 max|diff|=3.227089e-02
+[tradeoff] ridge=0.000e+00 AO rel(mean/max)=(1.765645e-01/1.847913e-01) |b|=1.268055e+02 max|b|=6.220645e+01
+
+--- ridge = 1.000e-10 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-10
+[fit] |b|=1.266708e+02, max|b|=6.214957e+01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.847933e-01 abs=3.814193e-01 ||V_old||=2.064032e+00 ||V_fit||=2.023582e+00 max|diff|=9.632165e-02
+[AO fit] right rel=1.683291e-01 abs=1.970055e-01 ||V_old||=1.170359e+00 ||V_fit||=1.201249e+00 max|diff|=3.227105e-02
+[tradeoff] ridge=1.000e-10 AO rel(mean/max)=(1.765612e-01/1.847933e-01) |b|=1.266708e+02 max|b|=6.214957e+01
+
+--- ridge = 1.000e-08 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-08
+[fit] |b|=1.148552e+02, max|b|=5.708013e+01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.849747e-01 abs=3.817938e-01 ||V_old||=2.064032e+00 ||V_fit||=2.023538e+00 max|diff|=9.638764e-02
+[AO fit] right rel=1.676023e-01 abs=1.961549e-01 ||V_old||=1.170359e+00 ||V_fit||=1.201125e+00 max|diff|=3.228496e-02
+[tradeoff] ridge=1.000e-08 AO rel(mean/max)=(1.762885e-01/1.849747e-01) |b|=1.148552e+02 max|b|=5.708013e+01
+
+--- ridge = 1.000e-06 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-06
+[fit] |b|=2.707184e+01, max|b|=8.742832e+00
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.873011e-01 abs=3.865955e-01 ||V_old||=2.064032e+00 ||V_fit||=2.023237e+00 max|diff|=9.695717e-02
+[AO fit] right rel=1.634146e-01 abs=1.912537e-01 ||V_old||=1.170359e+00 ||V_fit||=1.200156e+00 max|diff|=3.231106e-02
+[tradeoff] ridge=1.000e-06 AO rel(mean/max)=(1.753578e-01/1.873011e-01) |b|=2.707184e+01 max|b|=8.742832e+00
+
+--- ridge = 1.000e-04 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-04
+[fit] |b|=5.744716e+00, max|b|=2.003191e+00
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.911667e-01 abs=3.945741e-01 ||V_old||=2.064032e+00 ||V_fit||=2.022195e+00 max|diff|=9.889587e-02
+[AO fit] right rel=1.645363e-01 abs=1.925666e-01 ||V_old||=1.170359e+00 ||V_fit||=1.198869e+00 max|diff|=3.284194e-02
+[tradeoff] ridge=1.000e-04 AO rel(mean/max)=(1.778515e-01/1.911667e-01) |b|=5.744716e+00 max|b|=2.003191e+00
+
+--- ridge = 1.000e-03 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-03
+[fit] |b|=3.319968e+00, max|b|=1.356073e+00
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=1.962406e-01 abs=4.050469e-01 ||V_old||=2.064032e+00 ||V_fit||=2.018599e+00 max|diff|=1.043803e-01
+[AO fit] right rel=1.633921e-01 abs=1.912275e-01 ||V_old||=1.170359e+00 ||V_fit||=1.194600e+00 max|diff|=3.408709e-02
+[tradeoff] ridge=1.000e-03 AO rel(mean/max)=(1.798164e-01/1.962406e-01) |b|=3.319968e+00 max|b|=1.356073e+00
+
+--- ridge = 1.000e-02 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-02
+[fit] |b|=1.771909e+00, max|b|=6.048692e-01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=2.117848e-01 abs=4.371307e-01 ||V_old||=2.064032e+00 ||V_fit||=2.005525e+00 max|diff|=1.120827e-01
+[AO fit] right rel=1.748606e-01 abs=2.046497e-01 ||V_old||=1.170359e+00 ||V_fit||=1.182502e+00 max|diff|=3.827218e-02
+[tradeoff] ridge=1.000e-02 AO rel(mean/max)=(1.933227e-01/2.117848e-01) |b|=1.771909e+00 max|b|=6.048692e-01
+
+--- ridge = 1.000e-01 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e-01
+[fit] |b|=1.100572e+00, max|b|=4.196809e-01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=2.469885e-01 abs=5.097921e-01 ||V_old||=2.064032e+00 ||V_fit||=1.949109e+00 max|diff|=1.387687e-01
+[AO fit] right rel=2.038403e-01 abs=2.385664e-01 ||V_old||=1.170359e+00 ||V_fit||=1.142549e+00 max|diff|=5.075752e-02
+[tradeoff] ridge=1.000e-01 AO rel(mean/max)=(2.254144e-01/2.469885e-01) |b|=1.100572e+00 max|b|=4.196809e-01
+
+--- ridge = 1.000e+00 ---
+
+[fit] building stacked AO->PBS least-squares system
+[fit] case=left  A=(6786, 1336) ||V_old||=2.064032e+00 weight=1
+[fit] case=right A=(1168156, 1336) ||V_old||=1.170359e+00 weight=1
+[fit] stacked A shape=(1174942, 1336), y shape=(1174942,)
+[fit] cond(A^T A) = 1.666150e+10
+[fit] solved normal equations with ridge=1.000e+00
+[fit] |b|=6.078915e-01, max|b|=2.332308e-01
+
+=== AO fit diagnostics ===
+[AO fit] left  rel=3.750788e-01 abs=7.741746e-01 ||V_old||=2.064032e+00 ||V_fit||=1.746059e+00 max|diff|=2.254539e-01
+[AO fit] right rel=3.506794e-01 abs=4.104209e-01 ||V_old||=1.170359e+00 ||V_fit||=9.920281e-01 max|diff|=9.378687e-02
+[tradeoff] ridge=1.000e+00 AO rel(mean/max)=(3.628791e-01/3.750788e-01) |b|=6.078915e-01 max|b|=2.332308e-01
+
+=== Ridge scan summary (compact) ===
+[scan] ridge=0.000e+00 AO rel(mean/max)=(1.765645e-01/1.847913e-01) |b|=1.268055e+02 max|b|=6.220645e+01
+[scan] ridge=1.000e-10 AO rel(mean/max)=(1.765612e-01/1.847933e-01) |b|=1.266708e+02 max|b|=6.214957e+01
+[scan] ridge=1.000e-08 AO rel(mean/max)=(1.762885e-01/1.849747e-01) |b|=1.148552e+02 max|b|=5.708013e+01
+[scan] ridge=1.000e-06 AO rel(mean/max)=(1.753578e-01/1.873011e-01) |b|=2.707184e+01 max|b|=8.742832e+00
+[scan] ridge=1.000e-04 AO rel(mean/max)=(1.778515e-01/1.911667e-01) |b|=5.744716e+00 max|b|=2.003191e+00
+[scan] ridge=1.000e-03 AO rel(mean/max)=(1.798164e-01/1.962406e-01) |b|=3.319968e+00 max|b|=1.356073e+00
+[scan] ridge=1.000e-02 AO rel(mean/max)=(1.933227e-01/2.117848e-01) |b|=1.771909e+00 max|b|=6.048692e-01
+[scan] ridge=1.000e-01 AO rel(mean/max)=(2.254144e-01/2.469885e-01) |b|=1.100572e+00 max|b|=4.196809e-01
+[scan] ridge=1.000e+00 AO rel(mean/max)=(3.628791e-01/3.750788e-01) |b|=6.078915e-01 max|b|=2.332308e-01
+
+=== S3 vs grid diagnostics ===
+[S3 vs grid] left  rel=1.711917e-01 ||S3||=2.023538e+00 ||grid||=2.128752e+00 max|diff|=1.847606e-01
+[S3 vs grid] right rel=1.112530e-01 ||S3||=1.201125e+00 ||grid||=1.194250e+00 max|diff|=1.587808e-02
+[S3 vs grid] full  rel=1.763441e-01 ||S3||=2.052921e+00 ||grid||=2.158464e+00 max|diff|=1.842059e-01
+[save] wrote fitted coefficients to ao_to_pbs_fit.pkl
+=== done ===
+=== Python finished ===
+All done.

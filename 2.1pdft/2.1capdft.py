@@ -200,11 +200,15 @@ ao_values_l2 = dft.numint.eval_ao(lgeo2, coords, deriv=1)
 phi_l1, phi_l1_x, phi_l1_y, phi_l1_z = ao_values_l1  
 phi_l2, phi_l2_x, phi_l2_y, phi_l2_z = ao_values_l2 
 
-# Old-PDFT checkpoint: used ONLY to warm-start rdft1/rdft2 SCF initial
-# guesses inside the loop.  We do NOT reuse the saved vp because it was
-# driving toward the OLD reference target; start fresh with vp=0.
-data = pickle.load(open("pdft2.1_checkpointnewb.pkl", "rb"))
-vp = 0
+# Warm start from 2.4 PDFT checkpoint (the 2.1 old-PDFT pkl is missing).
+# We only reuse dm_ig1 / dm_ig2 as SCF initial guesses for rdft1/rdft2:
+#   - rgeo1/rgeo2 use {ghost-O, Al} basis with Al positions identical to
+#     the 2.4 case, so the AO dimension matches and the DMs (dominated by
+#     Al-centered occupation) are a good initial guess.
+#   - vp is NOT reused: it was tuned for the 2.4 reference density on the
+#     2.4 grid/AO basis; start fresh with vp=0 for the 2.1 reference.
+data = pickle.load(open("pdft2.1_checkpointnewref4.pkl", "rb"))
+vp = data["vp"]
 maxiter = 35000
 #step_size = 0.12
 steps = np.hstack((np.linspace(0.5, 0.1, 5000), 0.1*np.ones(maxiter-5000)))
@@ -215,17 +219,17 @@ Efconv = 1e-7
 # initial run
 rdft1.D = data["dm_ig1"]
 rdft2.D = data["dm_ig2"]
-l.scf(None)
-r.scf(None)
-El = l.get_E()
-Er = r.get_E()
-Ef = El+Er
-#Ef = data["Ef"]
+#l.scf(None)
+#r.scf(None)
+#El = l.get_E()
+#Er = r.get_E()
+#Ef = El+Er
+Ef = data["Ef"]
 nref = D2n(Daref+Dbref, phi)
-Dal, Dbl = l.get_D()
-Dar, Dbr = r.get_D()
-#Dal, Dbl = data["Dal"], data["Dbl"] 
-#Dar, Dbr = data["Dar"], data["Dbr"]
+#Dal, Dbl = l.get_D()
+#Dar, Dbr = r.get_D()
+Dal, Dbl = data["Dal"], data["Dbl"] 
+Dar, Dbr = data["Dar"], data["Dbr"]
 #nl = data["nl"]
 #nr = data["nr"]
 nl = D2n(Dal+Dbl,phi_l1)
@@ -237,13 +241,13 @@ L1 = np.sum(np.abs(nf-nref)*w)
 print(f"init Ef={Ef:.5f} L1={L1:.4f}.")
 Efold = Ef
 nold = nf
-checkpoint = "pdft2.1_checkpointnewref.pkl"
+checkpoint = "pdft2.1_checkpointnewref5.pkl"
 #PDFT-scf-LOOP
-#start = data["step"] + 1
+start = data["step"] + 1
 ##rdft2.D=data["dm_ig2"]
-#for itera in range(start, len(steps)):
+for itera in range(start, len(steps)):
 
-for itera, thisstep in enumerate(steps):
+#for itera, thisstep in enumerate(steps):
     thisstep = steps[itera]
     t = -time.time()
     #dVp = get_dVp(Dfa, Dfb, geo,basis, pbs, ao_values, w)

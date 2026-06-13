@@ -94,14 +94,17 @@ Al    P
       0.041397               1.000000
 Al    D
       0.3250000              1.0000000''')
-#ref pbe calculation for O2/Al50 at 2.4A
-mol, scf_dict = scfchk.load_scf('al2.7.chk')
-mf = dft.UKS(mol)
-mo_coeff  = scf_dict['mo_coeff']
-mo_occ    = scf_dict['mo_occ']
-mo_energy = scf_dict['mo_energy']
-Daref, Dbref = mf.make_rdm1(mo_coeff, mo_occ) 
-#nref = D2n(Daref+Dbref, phi)
+#ref pbe calculation for O2/Al50 at 2.7A
+# OLD reference (commented out): unsmeared DFT from al2.7.chk
+#mol, scf_dict = scfchk.load_scf('al2.7.chk')
+#mf = dft.UKS(mol)
+#Daref, Dbref = mf.make_rdm1(scf_dict['mo_coeff'], scf_dict['mo_occ'])
+# NEW reference: smeared (sigma=0.002) full-system spin DMs from 2.7dftref
+with open("../2.7dftref/al2.7_sigma0.002_last_dm.pkl", "rb") as f:
+    data_ref = pickle.load(f)
+Daref = data_ref["Da_last_normal"]
+Dbref = data_ref["Db_last_normal"]
+#nref = D2n(Daref+Dbref, phi)  # built below once `phi` is available
 
 #total geo
 geo = gto.Mole()
@@ -194,9 +197,10 @@ ao_values_l2 = dft.numint.eval_ao(lgeo2, coords, deriv=1)
 phi_l1, phi_l1_x, phi_l1_y, phi_l1_z = ao_values_l1  
 phi_l2, phi_l2_x, phi_l2_y, phi_l2_z = ao_values_l2 
 
-#data = pickle.load(open("pdft_checkpointnewb4.pkl", "rb"))
-# define init parameters
-#vp = data["vp"]
+# Old-PDFT checkpoint: used ONLY to warm-start rdft1/rdft2 SCF initial
+# guesses inside the loop.  We do NOT reuse the saved vp because it was
+# driving toward the OLD reference target; start fresh with vp=0.
+data = pickle.load(open("../2.7inversion/pdft2.7_checkpointnewb.pkl", "rb"))
 vp = 0
 maxiter = 35000
 #step_size = 0.12
@@ -204,13 +208,10 @@ steps = np.hstack((np.linspace(0.5, 0.1, 5000), 0.1*np.ones(maxiter-5000)))
 # convergence info
 dVperrconv = 1e-1
 Efconv = 1e-7
-# VH
-#load the results from previous run
-#data = pickle.load(open("pdft_checkpointpbe.pkl", "rb"))
-#Vpl  = data["Vpl"]
-#Vpr  = data["Vpr"]
 
 # initial run
+rdft1.D = data["dm_ig1"]
+rdft2.D = data["dm_ig2"]
 l.scf(None)
 r.scf(None)
 El = l.get_E()
@@ -233,14 +234,13 @@ L1 = np.sum(np.abs(nf-nref)*w)
 print(f"init Ef={Ef:.5f} L1={L1:.4f}.")
 Efold = Ef
 nold = nf
-checkpoint = "pdft2.7_checkpointnewb.pkl"
+checkpoint = "pdft2.7_checkpointnewref.pkl"
 #PDFT-scf-LOOP
-#start = data["step"] + 1
-#rdft1.D=data["dm_ig1"]
-#rdft2.D=data["dm_ig2"]
-#for itera in range(start, len(steps)):
-
-for itera, thisstep in enumerate(steps):
+start = 0
+# Warm-start the right-ensemble SCF initial guesses from the old PDFT
+# checkpoint.  Left-ensemble fragments do a cold initial SCF above
+# (l.scf(None)); they will pick up their own warm DMs inside the loop.
+for itera in range(start, len(steps)):
     thisstep = steps[itera]
     t = -time.time()
     #dVp = get_dVp(Dfa, Dfb, geo,basis, pbs, ao_values, w)

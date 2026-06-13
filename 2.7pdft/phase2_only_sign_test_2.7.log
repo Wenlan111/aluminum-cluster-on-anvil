@@ -1,0 +1,22 @@
+=== phase2-only sign test 2.7 ===
+AO_TO_PBS_PKL=ao_to_pbs_fit.pkl
+OPT_FINAL_PKL=pdft_optimizer8.pkl
+maxiter=5
+S3 shapes left=(116, 116, 1336), right=(1528, 1528, 1336), full=(1544, 1544, 1336)
+No checkpoint writes in this run.
+
+===== case: b_zero =====
+[sign] scipy objective = -L ; jac = -grad
+[init] Ef=-12265.94620583 L=-12265.94620583 |grad|=3.270587e-02 cycles=None converged=True wall=2616.2s
+[iter 1] Ef=-12265.15083955 L=-12265.15108311 |grad|=4.849669e-02 |db|=5.172459e-01 dEf=+7.955e-01 dL=+7.952e-01 cycles=None converged=True wall=1436.2s
+[iter 2] Ef=-12264.94688261 L=-12264.94680069 |grad|=4.333385e-02 |db|=1.004926e-01 dEf=+2.028e-01 dL=+2.029e-01 cycles=None converged=True wall=1310.6s
+[iter 3] Ef=-12264.81201843 L=-12264.81112458 |grad|=3.790546e-02 |db|=5.555222e-02 dEf=+1.372e-01 dL=+1.382e-01 cycles=None converged=True wall=1095.7s
+[iter 4] Ef=-12263.52201820 L=-12263.51843957 |grad|=3.141545e-02 |db|=4.565988e-01 dEf=+1.289e+00 dL=+1.292e+00 cycles=None converged=True wall=1120.0s
+[iter 5] Ef=-12262.23234197 L=-12262.23225830 |grad|=6.351648e-02 |db|=4.358585e-01 dEf=+1.287e+00 dL=+1.284e+00 cycles=None converged=True wall=1205.4s
+[final] message=STOP: TOTAL NO. of ITERATIONS REACHED LIMIT success=False nit=5 Ef=-12262.23350785 L=-12262.23349961 |grad|=6.358469e-02
+
+===== case: b_ridge_1e-3 =====
+[sign] scipy objective = -L ; jac = -grad
+[init] Ef=-12267.33895522 L=-12267.32232295 |grad|=1.880487e-02 cycles=None converged=True wall=2123.3s
+[iter 1] Ef=-12266.79053299 L=-12266.77487300 |grad|=7.154783e-02 |db|=2.751950e-01 dEf=+5.485e-01 dL=+5.475e-01 cycles=None converged=True wall=1353.2s
+[iter 2] Ef=-12266.20938901 L=-12266.19314183 |grad|=4.139166e-02 |db|=2.860585e-01 dEf=+5.815e-01 dL=+5.821e-01 cycles=None converged=True wall=1910.0s

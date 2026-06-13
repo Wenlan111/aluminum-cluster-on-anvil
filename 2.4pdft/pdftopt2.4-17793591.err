@@ -1,0 +1,18 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "pdftoptimizer.py", line 534, in <module>
+    main()
+  File "pdftoptimizer.py", line 469, in main
+    vp = _init_vp_coeffs(warm_data, s3, s3l, s3r)
+  File "pdftoptimizer.py", line 311, in _init_vp_coeffs
+    vp = np.mean(parts, axis=0)
+  File "<__array_function__ internals>", line 200, in mean
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 3464, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "/home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/numpy/core/_methods.py", line 165, in _mean
+    arr = asanyarray(a)
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (2,) + inhomogeneous part.

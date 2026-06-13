@@ -1,0 +1,48 @@
+=== warmstart compare 2.7 ===
+AO_TO_PBS_PKL=ao_to_pbs_fit.pkl
+OPT_FINAL_PKL=pdft_optimizer8.pkl
+N_STEPS=5 ALPHA=1.0 MAX_STEP_NORM=0.05
+USE_OPT_DM_GUESS=True
+S3 shapes left=(116, 116, 1336), right=(1528, 1528, 1336), full=(1544, 1544, 1336)
+
+===== case: b_zero =====
+[init] |b|=0.000000e+00 max|b|=0.000000e+00
+[eval-0] Ef=-12265.94620583 L=-12265.94620583 |grad|=3.270587e-02 cycles=None converged=True wall=2674.2s cos(grad,b_opt-b_init)=0.669656
+[step 1] |db|=3.270587e-02 Ef=-12265.89668876 (d=+4.952e-02) L=-12265.89567433 (d=+5.053e-02) |grad|=3.116194e-02 cycles=None converged=True wall=848.1s
+[step 2] |db|=3.116194e-02 Ef=-12265.84516921 (d=+5.152e-02) L=-12265.84328522 (d=+5.239e-02) |grad|=2.965917e-02 cycles=None converged=True wall=978.9s
+[step 3] |db|=2.965917e-02 Ef=-12265.79437631 (d=+5.079e-02) L=-12265.79175678 (d=+5.153e-02) |grad|=2.824638e-02 cycles=None converged=True wall=1092.9s
+[step 4] |db|=2.824638e-02 Ef=-12265.74239622 (d=+5.198e-02) L=-12265.73913794 (d=+5.262e-02) |grad|=2.706151e-02 cycles=None converged=True wall=1084.6s
+[step 5] |db|=2.706151e-02 Ef=-12265.68964509 (d=+5.275e-02) L=-12265.68582470 (d=+5.331e-02) |grad|=2.604886e-02 cycles=None converged=True wall=1075.2s
+[summary] grad_nonincreasing=True L_monotonic_increase=True Ef_monotonic_increase=True
+
+===== case: b_ridge_1e-4 =====
+[init] |b|=5.744716e+00 max|b|=2.003191e+00
+[eval-0] Ef=-12267.34415129 L=-12267.32756983 |grad|=1.932247e-02 cycles=None converged=True wall=2079.5s cos(grad,b_opt-b_init)=0.207813
+[step 1] |db|=1.932247e-02 Ef=-12267.30310176 (d=+4.105e-02) L=-12267.28622443 (d=+4.135e-02) |grad|=1.878084e-02 cycles=None converged=True wall=603.6s
+[step 2] |db|=1.878084e-02 Ef=-12267.26151406 (d=+4.159e-02) L=-12267.24433004 (d=+4.189e-02) |grad|=1.853618e-02 cycles=None converged=True wall=793.5s
+[step 3] |db|=1.853618e-02 Ef=-12267.22283768 (d=+3.868e-02) L=-12267.20541116 (d=+3.892e-02) |grad|=1.814371e-02 cycles=None converged=True wall=1104.5s
+[step 4] |db|=1.814371e-02 Ef=-12267.18418998 (d=+3.865e-02) L=-12267.16653537 (d=+3.888e-02) |grad|=1.784581e-02 cycles=None converged=True wall=1079.4s
+[step 5] |db|=1.784581e-02 Ef=-12267.14670086 (d=+3.749e-02) L=-12267.12884964 (d=+3.769e-02) |grad|=1.754389e-02 cycles=None converged=True wall=1113.1s
+[summary] grad_nonincreasing=True L_monotonic_increase=True Ef_monotonic_increase=True
+
+===== case: b_ridge_1e-3 =====
+[init] |b|=3.319968e+00 max|b|=1.356073e+00
+[eval-0] Ef=-12267.33895522 L=-12267.32232295 |grad|=1.880487e-02 cycles=None converged=True wall=2076.3s cos(grad,b_opt-b_init)=0.367813
+[step 1] |db|=1.880487e-02 Ef=-12267.30073898 (d=+3.822e-02) L=-12267.28381725 (d=+3.851e-02) |grad|=1.835743e-02 cycles=None converged=True wall=589.2s
+[step 2] |db|=1.835743e-02 Ef=-12267.26293120 (d=+3.781e-02) L=-12267.24570744 (d=+3.811e-02) |grad|=1.816069e-02 cycles=None converged=True wall=888.2s
+[step 3] |db|=1.816069e-02 Ef=-12267.22731730 (d=+3.561e-02) L=-12267.20986826 (d=+3.584e-02) |grad|=1.778829e-02 cycles=None converged=True wall=1068.4s
+[step 4] |db|=1.778829e-02 Ef=-12267.19166513 (d=+3.565e-02) L=-12267.17399420 (d=+3.587e-02) |grad|=1.752971e-02 cycles=None converged=True wall=1091.3s
+[step 5] |db|=1.752971e-02 Ef=-12267.15612345 (d=+3.554e-02) L=-12267.13824011 (d=+3.575e-02) |grad|=1.731754e-02 cycles=None converged=True wall=1152.2s
+[summary] grad_nonincreasing=True L_monotonic_increase=True Ef_monotonic_increase=True
+
+===== case: b_opt_final =====
+[init] |b|=2.401485e+00 max|b|=8.816003e-01
+[eval-0] Ef=-12262.81508436 L=-12262.79906628 |grad|=1.157102e-02 cycles=None converged=True wall=1577.4s cos(grad,b_opt-b_init)=nan
+[step 1] |db|=1.157102e-02 Ef=-12262.87576265 (d=-6.068e-02) L=-12262.85942651 (d=-6.036e-02) |grad|=1.146964e-02 cycles=None converged=True wall=1301.7s
+[step 2] |db|=1.146964e-02 Ef=-12262.93510478 (d=-5.934e-02) L=-12262.91846213 (d=-5.904e-02) |grad|=1.137425e-02 cycles=None converged=True wall=1240.2s
+[step 3] |db|=1.137425e-02 Ef=-12262.99319273 (d=-5.809e-02) L=-12262.97626041 (d=-5.780e-02) |grad|=1.128592e-02 cycles=None converged=True wall=1292.2s
+[step 4] |db|=1.128592e-02 Ef=-12263.05005808 (d=-5.687e-02) L=-12263.03284932 (d=-5.659e-02) |grad|=1.120432e-02 cycles=None converged=True wall=1244.3s
+[step 5] |db|=1.120432e-02 Ef=-12263.10588114 (d=-5.582e-02) L=-12263.08841401 (d=-5.556e-02) |grad|=1.112956e-02 cycles=None converged=True wall=1208.1s
+[summary] grad_nonincreasing=True L_monotonic_increase=False Ef_monotonic_increase=False
+
+[done] total wall time = 30040.7s

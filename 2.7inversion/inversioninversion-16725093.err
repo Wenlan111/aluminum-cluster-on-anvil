@@ -1,0 +1,9 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+  File "inversion.py", line 309
+    inv.set_system(mol, _inv_basis, pbs=6-31g*)
+                                            ^
+SyntaxError: invalid syntax

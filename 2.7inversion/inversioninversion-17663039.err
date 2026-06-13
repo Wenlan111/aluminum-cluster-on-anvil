@@ -1,0 +1,6 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+[2026-05-25T23:14:40.299] error: *** JOB 17663039 ON b000 CANCELLED AT 2026-05-25T23:14:40 DUE to SIGNAL Terminated ***

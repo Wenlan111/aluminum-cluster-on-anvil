@@ -1,0 +1,43 @@
+n2v PySCFGrider memory patch: active
+n2v get_S3: chunked (chunk=4096); DF wrapper (INVERSION_S3_DF=True)
+n2v from: /home/x-wmiao/.conda/envs/n2v_envi/lib/python3.8/site-packages/n2v/__init__.py
+Optimization Successful within 36 iterations! |grad|=9.93e-03
+Inversion (WuYang) wall time: 5181.979 s
+Ne_inv = 668.0000002594119
+T (electronic kinetic, Ha) = 12203.678941893799
+V (nuclear attraction, Ha) = -68614.04039441496
+E_hartree (Ha) = 25466.877516266053
+E_xc (PBE, Ha) = -943.2838373984259
+E_nn (nuclear repulsion, Ha) = 19621.038651232662
+E_ks_total (Ha) = -12265.729122420871
+============================================================
+Electron-count comparison
+------------------------------------------------------------
+nref (al2.7.chk)              = 666.000000
+nf   (pkl projected to mol)   = 665.999952
+nf2  (pkl in fragment AOs)    = 666.000000  (L=16.205854, R=649.794146)
+ninv (inverted density)       = 668.000000
+------------------------------------------------------------
+nf   - nref = -4.796e-05
+nf2  - nref = -4.150e-11
+ninv - nref = +2.000e+00
+nf   - nf2  = -4.796e-05
+ninv - nf   = +2.000e+00
+============================================================
+============================================================
+Density (real-space) comparison on mol grid (level=3)
+------------------------------------------------------------
+int rho_ref = 666.000033
+int rho_f   = 665.999986
+int rho_f2  = 666.000034  (L=16.205841, R=649.794193)
+int rho_inv = 668.000036
+------------------------------------------------------------
+rho_f   - rho_ref       int|dρ|=5.6601e-01  max|dρ|=1.6007e-01
+rho_f2  - rho_ref       int|dρ|=5.6575e-01  max|dρ|=1.6003e-01
+rho_inv - rho_ref       int|dρ|=5.6512e+00  max|dρ|=1.1790e+01
+rho_f   - rho_f2        int|dρ|=5.5254e-03  max|dρ|=3.3366e-03
+rho_inv - rho_f         int|dρ|=5.5316e+00  max|dρ|=1.1791e+01
+rho_inv - rho_f2        int|dρ|=5.5321e+00  max|dρ|=1.1791e+01
+============================================================
+=== Python finished ===
+All done.

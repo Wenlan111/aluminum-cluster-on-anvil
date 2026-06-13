@@ -1,0 +1,17 @@
+Job ID: 16653305
+PWD: /anvil/scratch/x-wmiao/alcluster50/Al_cluster/anew/newbasis/2.7inversion
+Python: /home/x-wmiao/.conda/envs/n2v_envi/bin/python
+checkpoint=pdft2.7_checkpointnewb.pkl chk=al2.7.chk grid_level=3
+
+checkpoint: pdft2.7_checkpointnewb.pkl
+chk: al2.7.chk
+grid level: 3, ngrid=948528
+nf source: checkpoint nl+nr
+N(Dlnew+Drnew) = 665.9999859930
+N(nf)          = 666.0000340864
+L1             = 5.5254441036e-03
+L2             = 3.6757472329e-04
+max|dn|        = 3.3366294367e-03
+norm(dn)       = 7.9178846032e-02
+
+Done.

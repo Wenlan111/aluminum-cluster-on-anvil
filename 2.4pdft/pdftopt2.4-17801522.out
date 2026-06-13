@@ -1,0 +1,15 @@
+pyscf max mem 1049686
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+building grid (level 3, warm-start + diagnostics)...
+computing S3 tensors (DF)...
+S3 shapes: left=(116, 116, 1336) right=(1528, 1528, 1336) ref=(1544, 1544, 1336)
+[warm-start] loaded pdft_checkpointnewref6.pkl
+[init] vp from grid projection onto PBS, len=1336, residual=6.35939e+02
+[warm-start] Vpl/Vpr from v2V(pickle vp grid), ngrid=948528
+[warm-start] left fragments with Vpl
+[warm-start]   ldft1.kernel(Vp)
+dm0 check None
+converged SCF energy = -150.224312471216  <S^2> = 2.0046463  2S+1 = 3.0030959
+=== Python finished ===
+All done.

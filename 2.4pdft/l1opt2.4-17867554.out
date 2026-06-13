@@ -1,0 +1,6 @@
+pickle: pdft_optimizer.pkl
+iter: 1
+L (Lagrangian): -12265.96586798
+Ef: -12265.96586798
+=== Python finished ===
+All done.

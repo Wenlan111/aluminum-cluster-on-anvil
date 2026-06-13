@@ -1,0 +1,11 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Overwritten attributes  Vp  of <class 'pyscf.soscf.newton_ah.SecondOrderUKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFRKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFUKS'>
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-06-08T22:29:34.309] error: *** STEP 18032758.0 ON b004 CANCELLED AT 2026-06-08T22:29:34 DUE to SIGNAL Terminated ***
+[2026-06-08T22:29:34.310] error: *** JOB 18032758 ON b004 CANCELLED AT 2026-06-08T22:29:34 DUE to SIGNAL Terminated ***

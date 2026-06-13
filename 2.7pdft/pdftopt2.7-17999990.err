@@ -1,0 +1,15 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Overwritten attributes  Vp  of <class 'pyscf.soscf.newton_ah.SecondOrderUKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFRKS'>
+Overwritten attributes  Vp  of <class 'pyscf.scf.addons.SmearingDFUKS'>
+Traceback (most recent call last):
+  File "pdftoptimizer.py", line 707, in <module>
+    main()
+  File "pdftoptimizer.py", line 678, in main
+    delta = max_step_norm / np.sqrt(b_start.size)
+NameError: name 'b_start' is not defined
+srun: error: b000: task 0: Exited with exit code 1

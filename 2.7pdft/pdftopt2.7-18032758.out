@@ -1,0 +1,206 @@
+pyscf max mem 906110
+SLURM_CPUS_PER_TASK = 64
+OMP_NUM_THREADS = 64
+MKL_NUM_THREADS = 64
+OPENBLAS_NUM_THREADS = 64
+PySCF lib.num_threads() = 64
+left ensemble electron number ([9, 9], [7, 8])
+right ensemble electron number ([325, 325], [325, 323])
+[setup] build_system t=1.5s
+building grid (level 3)...
+[setup] grid t=4.5s
+computing S3 tensors (DF)...
+S3 shapes: left=(116, 116, 1336) right=(1528, 1528, 1336) ref=(1544, 1544, 1336) t=773.6s
+[warm-start] loaded pdft2.7_checkpointnewref.pkl
+[warm-start] rdft1.D ← pickle dm_ig1
+[warm-start] rdft2.D ← pickle dm_ig2
+[init] ridge=1e-3 b not found in ao_to_pbs_fit.pkl
+[init] available keys: ['vp', 'source_pickle', 'ridge', 'fit_summary']
+[warm-start] Lagrangian x0 ready, |b0| = 0.00000e+00
+[setup] warm-start t=0.1s
+[main] skipping phase1; starting phase2 directly from b0
+starting phase 2: L-BFGS-B optimization
+starting phase 2: bounded L-BFGS-B outer loop
+[phase2 outer 1] start |b|=0.000000e+00 max|b|=0.000000e+00 delta=8.208e-04
+[diagnostic] step=1 |b|=0.000000e+00 max|b|=0.000000e+00
+[timing] build AO Vp from S3 = 1.7s
+[diagnostic] |vpl|=0.000000e+00 max|vpl|=0.000000e+00
+[diagnostic] |vpr|=0.000000e+00 max|vpr|=0.000000e+00
+[diagnostic] |vpref|=0.000000e+00 max|vpref|=0.000000e+00
+dm0 check None
+converged SCF energy = -150.226693714538  <S^2> = 2.0045399  2S+1 = 3.003025
+dm0 check None
+converged SCF energy = -150.244985829666  <S^2> = 0.9297856  2S+1 = 2.1723587
+[timing] left/O ensemble SCF = 241.3s
+dm0 check [[ 3.79546900e-01  6.12213367e-01 -1.25165736e-01 ...  6.66370165e-06
+  -2.33689617e-06 -1.05103525e-05]
+ [ 6.12213367e-01  1.01506672e+00 -3.33858513e-01 ...  1.86964666e-05
+  -7.10972602e-06 -2.89303958e-05]
+ [-1.25165736e-01 -3.33858513e-01  6.74836071e-01 ... -4.48865440e-05
+   1.71768306e-05  7.00262040e-05]
+ ...
+ [ 6.66370165e-06  1.86964666e-05 -4.48865440e-05 ...  2.54258336e-06
+  -7.89375305e-07 -2.34197332e-06]
+ [-2.33689617e-06 -7.10972602e-06  1.71768306e-05 ... -7.89375305e-07
+   6.84845089e-07  7.46145915e-07]
+ [-1.05103525e-05 -2.89303958e-05  7.00262040e-05 ... -2.34197332e-06
+   7.46145915e-07  3.49597008e-06]]
+
+
+******** <class 'pyscf.scf.addons.SmearingDFRKS'> ********
+method = SmearingDFRKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpydva5y2i
+max_memory 4000 MB (current use 85863 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -12116.2333201069
+    sigma = 0.02  Optimized mu = -0.0523816928961  entropy = 1.48550183914
+    Total E(T) = -12116.2365790225  Free energy = -12116.2662890592  E0 = -12116.2514340408
+cycle= 1 E= -12116.2365790225  delta_E= -0.00326  |g|= 0.234  |ddm|= 1.36e+03
+    sigma = 0.02  Optimized mu = -0.0495344991096  entropy = 1.51087888299
+    Total E(T) = -12116.2229245054  Free energy = -12116.2531420831  E0 = -12116.2380332943
+cycle= 2 E= -12116.2229245054  delta_E= 0.0137  |g|= 0.659  |ddm|=  741
+    sigma = 0.02  Optimized mu = -0.0513943798798  entropy = 1.48812529652
+    Total E(T) = -12116.2339611432  Free energy = -12116.2637236491  E0 = -12116.2488423962
+cycle= 3 E= -12116.2339611432  delta_E= -0.011  |g|= 0.275  |ddm|=  386
+    sigma = 0.02  Optimized mu = -0.0513298332447  entropy = 1.48742991147
+    Total E(T) = -12116.2376503476  Free energy = -12116.2673989458  E0 = -12116.2525246467
+cycle= 4 E= -12116.2376503476  delta_E= -0.00369  |g|= 0.163  |ddm|=  124
+    sigma = 0.02  Optimized mu = -0.0515143444729  entropy = 1.48654855106
+    Total E(T) = -12116.2389269634  Free energy = -12116.2686579344  E0 = -12116.2537924489
+cycle= 5 E= -12116.2389269634  delta_E= -0.00128  |g|= 0.0798  |ddm|= 83.5
+    sigma = 0.02  Optimized mu = -0.0514102870854  entropy = 1.48682265107
+    Total E(T) = -12116.2393114881  Free energy = -12116.2690479412  E0 = -12116.2541797147
+cycle= 6 E= -12116.2393114881  delta_E= -0.000385  |g|= 0.0386  |ddm|= 55.4
+    sigma = 0.02  Optimized mu = -0.0512714057847  entropy = 1.48735199198
+    Total E(T) = -12116.2394076092  Free energy = -12116.269154649  E0 = -12116.2542811291
+cycle= 7 E= -12116.2394076092  delta_E= -9.61e-05  |g|= 0.0146  |ddm|= 49.6
+    sigma = 0.02  Optimized mu = -0.0513470808566  entropy = 1.48684817956
+    Total E(T) = -12116.2394331064  Free energy = -12116.26917007  E0 = -12116.2543015882
+cycle= 8 E= -12116.2394331064  delta_E= -2.55e-05  |g|= 0.0108  |ddm|=   28
+    sigma = 0.02  Optimized mu = -0.0512781848442  entropy = 1.48709613528
+    Total E(T) = -12116.2394435921  Free energy = -12116.2691855148  E0 = -12116.2543145534
+cycle= 9 E= -12116.2394435921  delta_E= -1.05e-05  |g|= 0.00475  |ddm|= 11.8
+    sigma = 0.02  Optimized mu = -0.151308520852  entropy = 50.9863630396
+    Total E(T) = -12115.7107263435  Free energy = -12116.7304536043  E0 = -12116.2205899739
+Extra cycle  E= -12115.7107263435  delta_E= 0.529  |g|= 0.382  |ddm|= 4.13e+03
+converged SCF energy = -12115.7107263435
+dm0 check [[[ 1.89795113e-01  3.06164561e-01 -6.27188117e-02 ...  3.18987225e-06
+   -1.19437280e-06 -4.96955639e-06]
+  [ 3.06164561e-01  5.07687096e-01 -1.67288795e-01 ...  8.96156923e-06
+   -3.62355515e-06 -1.36882917e-05]
+  [-6.27188117e-02 -1.67288795e-01  3.38250010e-01 ... -2.14684349e-05
+    8.74396705e-06  3.30677736e-05]
+  ...
+  [ 3.18987225e-06  8.96156923e-06 -2.14684349e-05 ...  1.20686575e-06
+   -3.92271871e-07 -1.08457287e-06]
+  [-1.19437280e-06 -3.62355515e-06  8.74396705e-06 ... -3.92271871e-07
+    3.49031543e-07  3.72083628e-07]
+  [-4.96955639e-06 -1.36882917e-05  3.30677736e-05 ... -1.08457287e-06
+    3.72083628e-07  1.61665549e-06]]
+
+ [[ 1.89773672e-01  3.06106267e-01 -6.25863442e-02 ...  2.90865707e-06
+   -1.10697947e-06 -4.84718520e-06]
+  [ 3.06106267e-01  5.07531570e-01 -1.66939217e-01 ...  8.20744815e-06
+   -3.38836635e-06 -1.33682759e-05]
+  [-6.25863442e-02 -1.66939217e-01  3.37467153e-01 ... -1.96815080e-05
+    8.18075136e-06  3.23845257e-05]
+  ...
+  [ 2.90865707e-06  8.20744815e-06 -1.96815080e-05 ...  1.20199757e-06
+   -3.90977000e-07 -1.07992600e-06]
+  [-1.10697947e-06 -3.38836635e-06  8.18075136e-06 ... -3.90977000e-07
+    3.52590086e-07  3.66229946e-07]
+  [-4.84718520e-06 -1.33682759e-05  3.23845257e-05 ... -1.07992600e-06
+    3.66229946e-07  1.60137090e-06]]]
+
+
+******** <class 'pyscf.scf.addons.SmearingDFUKS'> ********
+method = SmearingDFUKS
+initial guess = minao
+damping factor = 0.15
+level_shift factor = 0.2
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 12
+diis_damp = 0
+SCF conv_tol = 5e-05
+SCF conv_tol_grad = None
+SCF max_cycles = 200
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmpal_07qju
+max_memory 4000 MB (current use 86600 MB)
+number electrons alpha = 325  beta = 323
+XC library pyscf.dft.libxc version 6.1.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+small_rho_cutoff = 1e-06
+Set gradient conv threshold to 0.00707107
+init E= -12115.7882374134
+    sigma = 0.005  Optimized mu_alpha = -0.197411474643  entropy = 3.14934887838e-07
+    sigma = 0.005  Optimized mu_beta  = -0.20031134574  entropy = 3.14934887838e-07
+    Total E(T) = -12115.7914837614  Free energy = -12115.791483763  E0 = -12115.7914837622
+cycle= 1 E= -12115.7914837614  delta_E= -0.00325  |g|= 0.323  |ddm|=  924
+    sigma = 0.005  Optimized mu_alpha = -0.194964652249  entropy = 3.53479209938e-07
+    sigma = 0.005  Optimized mu_beta  = -0.197627281849  entropy = 3.53479209938e-07
+    Total E(T) = -12115.7796499218  Free energy = -12115.7796499236  E0 = -12115.7796499227
+cycle= 2 E= -12115.7796499218  delta_E= 0.0118  |g|= 0.876  |ddm|=  532
+    sigma = 0.005  Optimized mu_alpha = -0.196515431298  entropy = 3.14710739907e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199273217596  entropy = 3.14710739907e-07
+    Total E(T) = -12115.7892326686  Free energy = -12115.7892326701  E0 = -12115.7892326694
+cycle= 3 E= -12115.7892326686  delta_E= -0.00958  |g|= 0.37  |ddm|=  280
+    sigma = 0.005  Optimized mu_alpha = -0.19642998121  entropy = 3.15860718446e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199170056315  entropy = 3.15860718446e-07
+    Total E(T) = -12115.7926495529  Free energy = -12115.7926495545  E0 = -12115.7926495537
+cycle= 4 E= -12115.7926495529  delta_E= -0.00342  |g|= 0.205  |ddm|= 87.3
+    sigma = 0.005  Optimized mu_alpha = -0.196703945962  entropy = 3.15467164701e-07
+    sigma = 0.005  Optimized mu_beta  = -0.19946408297  entropy = 3.15467164701e-07
+    Total E(T) = -12115.7937641371  Free energy = -12115.7937641387  E0 = -12115.7937641379
+cycle= 5 E= -12115.7937641371  delta_E= -0.00111  |g|= 0.105  |ddm|=   56
+    sigma = 0.005  Optimized mu_alpha = -0.196463400584  entropy = 3.14781198066e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199214700516  entropy = 3.14781198066e-07
+    Total E(T) = -12115.7940977276  Free energy = -12115.7940977292  E0 = -12115.7940977284
+cycle= 6 E= -12115.7940977276  delta_E= -0.000334  |g|= 0.047  |ddm|= 42.4
+    sigma = 0.005  Optimized mu_alpha = -0.196405934847  entropy = 3.15278382318e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199150334595  entropy = 3.15278382318e-07
+    Total E(T) = -12115.7941798352  Free energy = -12115.7941798367  E0 = -12115.794179836
+cycle= 7 E= -12115.7941798352  delta_E= -8.21e-05  |g|= 0.0161  |ddm|= 33.5
+    sigma = 0.005  Optimized mu_alpha = -0.196433571499  entropy = 3.15483166932e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199176021775  entropy = 3.15483166932e-07
+    Total E(T) = -12115.7941993849  Free energy = -12115.7941993865  E0 = -12115.7941993857
+cycle= 8 E= -12115.7941993849  delta_E= -1.95e-05  |g|= 0.0124  |ddm|= 16.9
+    sigma = 0.005  Optimized mu_alpha = -0.196392042871  entropy = 3.15560659068e-07
+    sigma = 0.005  Optimized mu_beta  = -0.199133491295  entropy = 3.15560659068e-07
+    Total E(T) = -12115.7942093123  Free energy = -12115.7942093139  E0 = -12115.7942093131
+cycle= 9 E= -12115.7942093123  delta_E= -9.93e-06  |g|= 0.00553  |ddm|= 10.4
+    sigma = 0.005  Optimized mu_alpha = -0.296081209726  entropy = 12.7005526166
+    sigma = 0.005  Optimized mu_beta  = -0.299054920679  entropy = 12.7005526166
+    Total E(T) = -12115.758983817  Free energy = -12115.8224865801  E0 = -12115.7907351986
+Extra cycle  E= -12115.758983817  delta_E= 0.0352  |g|= 0.146  |ddm|=  860
+converged SCF energy = -12115.758983817  <S^2> = 2.0131618  2S+1 = 3.0087618
+[timing] right/Al ensemble SCF = 1217.1s
+[timing] collect state = 0.0s
+[timing] grad contraction = 1.5s

@@ -1,0 +1,14 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Overwritten attributes  Vp  of <class 'pyscf.soscf.newton_ah.SecondOrderUKS'>
+Traceback (most recent call last):
+  File "pdftoptimizer.py", line 531, in <module>
+    main()
+  File "pdftoptimizer.py", line 467, in main
+    _ao_warmstart_scf(
+  File "pdftoptimizer.py", line 418, in _ao_warmstart_scf
+    print(f"[warm-start]   {tag} E={frag.get_E():.8f}", flush=True)
+AttributeError: 'FragmentDFT' object has no attribute 'get_E'

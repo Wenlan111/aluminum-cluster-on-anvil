@@ -1,0 +1,5 @@
+Job ID: 16652632
+PWD: /anvil/scratch/x-wmiao/alcluster50/Al_cluster/anew/newbasis/2.7inversion
+Python: /home/x-wmiao/.conda/envs/n2v_envi/bin/python
+checkpoint=pdft_checkpointnewb6.pkl chk=al2.4.chk grid_level=3
+

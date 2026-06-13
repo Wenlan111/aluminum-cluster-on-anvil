@@ -1,0 +1,14 @@
+pickle: pdft_optimizer.pkl
+iter: 2
+L (Lagrangian): -12267.42286168
+Ef: -12267.44567374
+geo dir: /anvil/scratch/x-wmiao/alcluster50/Al_cluster/anew/newbasis/2.4pdft
+grid level: 3, ngrid=948528
+nf: recomputed from Dal/Dbl/Dar/Dbr
+nref: recomputed from Dref
+N(nf)   = 666.0000724907
+N(nref) = 666.0000674680
+Int w(nf-nref) = 5.0227151676e-06
+L1 (recomputed) = 1.6392721402e+00
+=== Python finished ===
+All done.

@@ -1,0 +1,14 @@
+grid level=3, npoints=948528
+eval_ao mol done
+eval_ao rgeo1 done
+S = 0.01013238266817677
+Scanning over log-spaced D in [1e-3, 1e2] and p in [0.5, 1.0]
+p = 0.500, S_int(p) = 2.761327e+00
+p = 0.600, S_int(p) = 7.925499e-01
+p = 0.700, S_int(p) = 2.443275e-01
+p = 0.800, S_int(p) = 8.012478e-02
+p = 0.900, S_int(p) = 2.777186e-02
+p = 1.000, S_int(p) = 1.013238e-02
+Saved plot to oa_scan_S_vs_D.png
+=== Python finished ===
+All done.

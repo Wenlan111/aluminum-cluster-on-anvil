@@ -1,0 +1,9 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/2.10.45
+lmod: xalt was automatically unloaded
+Traceback (most recent call last):
+  File "inversion.py", line 128, in <module>
+    import n2v_pyscf_engine_df_option  # noqa: E402
+ModuleNotFoundError: No module named 'n2v_pyscf_engine_df_option'

@@ -119,8 +119,8 @@ class FragmentDFT:
              mf = remove_linear_dep_(mf, lindep=1e-4)
 
              mf.direct_scf = True
-             mf.max_cycle = 200
-             mf.conv_tol = 1e-6 
+             mf.max_cycle = 80
+             mf.conv_tol = 5e-5 
              mf.verbose = 4
 
              mf.grids.level = 3
